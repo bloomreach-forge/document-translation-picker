@@ -6,7 +6,7 @@
 		<artifactId>hippo-cms7-project</artifactId>
 		<version>27.2</version>
 	</parent>
-	<groupId>nl.finalist.hippo</groupId>
+	<groupId>org.onehippo.forge</groupId>
 	<artifactId>documenttranslationpicker</artifactId>
 	<version>1.0.0-SNAPSHOT</version>
 	<name>documenttranslationpicker</name>
