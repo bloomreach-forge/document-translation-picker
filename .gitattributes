@@ -8,6 +8,8 @@ src/main/java/org/onehippo/forge/documenttranslationpicker/NodeChoiceRenderer.ja
 src/main/java/org/onehippo/forge/documenttranslationpicker/NodeNameBuilder.java -text
 src/main/java/org/onehippo/forge/documenttranslationpicker/TranslationOption.java -text
 src/main/java/org/onehippo/forge/documenttranslationpicker/TranslationOptionsListView.java -text
+src/main/resources/hippoecm-extension.xml -text
+src/main/resources/menuitem.xml -text
 src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPicker.css -text
 src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerDialog.html -text
 src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerDialog.properties -text
