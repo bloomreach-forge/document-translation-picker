@@ -27,22 +27,22 @@
 	</organization>
 
 	<scm>
-		<connection>scm:svn:https://forge.onehippo.org/svn/documenttranslationpicker/trunk</connection>
-		<developerConnection>scm:svn:https://forge.onehippo.org/svn/documenttranslationpicker/trunk</developerConnection>
-		<url>https://forge.onehippo.org/svn/documenttranslationpicker/trunk</url>
+		<connection>scm:svn:https://forge.onehippo.org/svn/doctranslation/trunk</connection>
+		<developerConnection>scm:svn:https://forge.onehippo.org/svn/doctranslation/trunk</developerConnection>
+		<url>https://forge.onehippo.org/svn/doctranslation/trunk</url>
 	</scm>
 
 	<distributionManagement>
 		<repository>
 			<uniqueVersion>false</uniqueVersion>
 			<id>documenttranslationpicker-maven-repo</id>
-			<url>svn:https://forge.onehippo.org/svn/documenttranslationpicker/maven2/</url>
+			<url>svn:https://forge.onehippo.org/svn/doctranslation/maven2/</url>
 		</repository>
 	</distributionManagement>
 
 	<issueManagement>
 		<system>Hippo Forge</system>
-		<url>https://forge.onehippo.org/gf/project/documenttranslationpicker/tracker/</url>
+		<url>https://forge.onehippo.org/gf/project/doctranslation/tracker/</url>
 	</issueManagement>
 
 	<licenses>
@@ -121,6 +121,13 @@
 				</executions>
 			</plugin>
 		</plugins>
+		<extensions>
+			<extension>
+				<groupId>org.jvnet.wagon-svn</groupId>
+				<artifactId>wagon-svn</artifactId>
+				<version>1.9</version>
+			</extension>
+		</extensions>
 	</build>
 
 	<reporting>
