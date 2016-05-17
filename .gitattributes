@@ -1,1 +1,18 @@
 * text=auto !eol
+/pom.xml -text
+/readme.md -text
+src/main/java/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerDialog.java -text
+src/main/java/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerPlugin.java -text
+src/main/java/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerWorkflow.java -text
+src/main/java/org/onehippo/forge/documenttranslationpicker/NodeChoiceRenderer.java -text
+src/main/java/org/onehippo/forge/documenttranslationpicker/NodeNameBuilder.java -text
+src/main/java/org/onehippo/forge/documenttranslationpicker/TranslationOption.java -text
+src/main/java/org/onehippo/forge/documenttranslationpicker/TranslationOptionsListView.java -text
+src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPicker.css -text
+src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerDialog.html -text
+src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerDialog.properties -text
+src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerDialog_nl.properties -text
+src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerPlugin.html -text
+src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerPlugin.properties -text
+src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerPlugin_nl.properties -text
+src/main/resources/screenshots/documenttranslationpicker_dialog.png -text

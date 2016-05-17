@@ -1,0 +1,162 @@
+<project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
+	<modelVersion>4.0.0</modelVersion>
+	<parent>
+		<groupId>org.onehippo.cms7</groupId>
+		<artifactId>hippo-cms7-project</artifactId>
+		<version>27.2</version>
+	</parent>
+	<groupId>nl.finalist.hippo</groupId>
+	<artifactId>documenttranslationpicker</artifactId>
+	<version>1.0.0-SNAPSHOT</version>
+	<name>documenttranslationpicker</name>
+	<description>The documenttranslationpicker project provides a plugin to Hippo CMS. Enables editors to pick a translation for a document.</description>
+
+	<inceptionYear>2016</inceptionYear>
+	<developers>
+		<developer>
+			<name>Ivor Boers</name>
+			<organization>Finalist</organization>
+			<organizationUrl>http://www.finalist.nl</organizationUrl>
+		</developer>
+	</developers>
+	
+	<organization>
+		<name>Finalist</name>
+		<url>http://www.finalist.nl</url>
+	</organization>
+
+	<scm>
+		<connection>scm:svn:https://forge.onehippo.org/svn/documenttranslationpicker/trunk</connection>
+		<developerConnection>scm:svn:https://forge.onehippo.org/svn/documenttranslationpicker/trunk</developerConnection>
+		<url>https://forge.onehippo.org/svn/documenttranslationpicker/trunk</url>
+	</scm>
+
+	<distributionManagement>
+		<repository>
+			<uniqueVersion>false</uniqueVersion>
+			<id>documenttranslationpicker-maven-repo</id>
+			<url>svn:https://forge.onehippo.org/svn/documenttranslationpicker/maven2/</url>
+		</repository>
+	</distributionManagement>
+
+	<issueManagement>
+		<system>Hippo Forge</system>
+		<url>https://forge.onehippo.org/gf/project/documenttranslationpicker/tracker/</url>
+	</issueManagement>
+
+	<licenses>
+		<license>
+			<name>Apache License, Version 2.0</name>
+			<url>http://www.apache.org/licenses/LICENSE-2.0.txt</url>
+		</license>
+	</licenses>
+	  
+	<properties>
+		<hippo-cms.version>3.2.0</hippo-cms.version>
+	</properties>
+
+	<repositories>
+		<repository>
+			<id>hippo</id>
+			<name>Hippo Maven 2 repository</name>
+			<url>http://maven.onehippo.com/maven2/</url>
+			<snapshots />
+			<releases>
+				<updatePolicy>never</updatePolicy>
+			</releases>
+			<layout>default</layout>
+		</repository>
+		<repository>
+			<id>hippo-maven2-forge</id>
+			<name>Hippo Maven 2 Forge repository</name>
+			<url>http://maven.onehippo.com/maven2-forge/</url>
+			<snapshots />
+		</repository>
+	</repositories>
+
+	<dependencies>
+		<dependency>
+			<groupId>org.onehippo.cms7</groupId>
+			<artifactId>hippo-cms-api</artifactId>
+			<version>${hippo-cms.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.onehippo.cms7</groupId>
+			<artifactId>hippo-repository-api</artifactId>
+			<version>${hippo-cms.version}</version>
+			<scope>provided</scope>
+		</dependency>
+		<dependency>
+			<groupId>org.onehippo.cms7</groupId>
+			<artifactId>hippo-repository-builtin</artifactId>
+			<version>${hippo-cms.version}</version>
+			<scope>provided</scope>
+		</dependency>
+	</dependencies>
+
+	<build>
+		<finalName>${project.parent.artifactId}-${project.artifactId}-${project.version}</finalName>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-compiler-plugin</artifactId>
+				<configuration>
+					<source>1.8</source>
+					<target>1.8</target>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-source-plugin</artifactId>
+				<inherited>true</inherited>
+				<executions>
+					<execution>
+						<id>attach-sources</id>
+						<goals>
+							<goal>jar</goal>
+						</goals>
+					</execution>
+				</executions>
+			</plugin>
+		</plugins>
+	</build>
+
+	<reporting>
+		<outputDirectory>target/site</outputDirectory>
+		<plugins>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-javadoc-plugin</artifactId>
+				<version>${maven.plugin.javadoc.version}</version>
+				<configuration>
+					<aggregate>true</aggregate>
+					<source>1.8</source>
+					<links>
+						<link>http://download.oracle.com/javase/8/docs/api</link>
+					</links>
+				</configuration>
+			</plugin>
+			<plugin>
+				<groupId>org.apache.maven.plugins</groupId>
+				<artifactId>maven-jxr-plugin</artifactId>
+				<version>${plugin.jxr.version}</version>
+				<reportSets>
+					<reportSet>
+						<id>src-xref</id>
+						<reports>
+							<report>jxr</report>
+						</reports>
+					</reportSet>
+				</reportSets>
+				<configuration>
+					<aggregate>true</aggregate>
+				</configuration>
+			</plugin>
+		</plugins>
+	</reporting>
+
+	<contributors />
+	<mailingLists />
+</project>
