@@ -7,7 +7,7 @@
 	</parent>
 	<groupId>nl.finalist.hippo</groupId>
 	<artifactId>documenttranslationpicker</artifactId>
-	<version>1.0.0</version>
+	<version>1.0.1-SNAPSHOT</version>
 	<name>documenttranslationpicker</name>
 	<description>The documenttranslationpicker project provides a plugin to Hippo CMS. Enables editors to pick a translation for a document.</description>
 
@@ -26,9 +26,9 @@
 	</organization>
 
 	<scm>
-		<connection>scm:svn:https://forge.onehippo.org/svn/doctranslation/tags/documenttranslationpicker-1.0.0</connection>
-		<developerConnection>scm:svn:https://forge.onehippo.org/svn/doctranslation/tags/documenttranslationpicker-1.0.0</developerConnection>
-		<url>https://forge.onehippo.org/svn/doctranslation/tags/documenttranslationpicker-1.0.0</url>
+		<connection>scm:svn:https://forge.onehippo.org/svn/doctranslation/trunk</connection>
+		<developerConnection>scm:svn:https://forge.onehippo.org/svn/doctranslation/trunk</developerConnection>
+		<url>https://forge.onehippo.org/svn/doctranslation/trunk</url>
 	</scm>
 
 	<distributionManagement>
