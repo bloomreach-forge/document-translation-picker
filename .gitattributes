@@ -18,3 +18,9 @@ src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslat
 src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerPlugin.properties -text
 src/main/resources/org/onehippo/forge/documenttranslationpicker/DocumentTranslationPickerPlugin_nl.properties -text
 src/main/resources/screenshots/documenttranslationpicker_dialog.png -text
+src/site/resources/images/screenshot.png -text
+src/site/site.xml -text
+src/site/xdoc/index.xml -text
+src/site/xdoc/plugin/install.xml -text
+src/site/xdoc/plugin/usage.xml -text
+src/site/xdoc/release-notes.xml -text
