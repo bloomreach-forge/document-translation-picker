@@ -55,7 +55,6 @@
 	<properties>
 		<hippo-cms.version>3.2.0</hippo-cms.version>
 		<plugin.site.version>3.3</plugin.site.version>
-		<plugin.jar.version>2.4</plugin.jar.version>
 		<plugin.surefire.version>2.16</plugin.surefire.version>
     	<plugin.jxr.version>2.2</plugin.jxr.version>
 	</properties>
@@ -140,7 +139,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-jar-plugin</artifactId>
-				<version>${plugin.jar.version}</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
