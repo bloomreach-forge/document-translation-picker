@@ -34,9 +34,9 @@
       <!-- SNIP -->
 
       <repository>
-        <id>documenttranslationpicker-maven-repo</id>
-        <name>Hippo CMS External Document Picker Base Maven 2 Repository</name>
-        <url>svn:https://forge.onehippo.org/svn/doctranslation/maven2/</url>
+        <id>hippo-maven2-forge</id>
+        <name>Hippo Maven 2 Forge Repository</name>
+        <url>https://maven.onehippo.com/maven2-forge/</url>
       </repository>
 
       <!-- SNIP -->

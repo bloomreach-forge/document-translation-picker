@@ -27,22 +27,24 @@
 	</organization>
 
 	<scm>
-		<connection>scm:svn:https://forge.onehippo.org/svn/doctranslation/trunk</connection>
-		<developerConnection>scm:svn:https://forge.onehippo.org/svn/doctranslation/trunk</developerConnection>
-		<url>https://forge.onehippo.org/svn/doctranslation/trunk</url>
+		<connection>scm:git:git@github.com:onehippo-forge/document-translation-picker.git</connection>
+		<developerConnection>scm:git:git@github.com:onehippo-forge/document-translation-picker.git</developerConnection>
+		<url>https://github.com/onehippo-forge/document-translation-picker.git</url>
+		<tag>HEAD</tag>
 	</scm>
 
 	<distributionManagement>
 		<repository>
+			<name>Hippo Maven 2 Forge Repository</name>
+			<id>hippo-maven2-forge</id>
+			<url>https://maven.onehippo.com/content/repositories/forge-releases/</url>
 			<uniqueVersion>false</uniqueVersion>
-			<id>documenttranslationpicker-maven-repo</id>
-			<url>svn:https://forge.onehippo.org/svn/doctranslation/maven2/</url>
 		</repository>
 	</distributionManagement>
 
 	<issueManagement>
-		<system>Hippo Forge</system>
-		<url>https://forge.onehippo.org/gf/project/doctranslation/tracker/</url>
+		<system>Hippo JIRA</system>
+		<url>https://issues.onehippo.com/browse/HIPFORGE</url>
 	</issueManagement>
 
 	<licenses>
@@ -53,10 +55,12 @@
 	</licenses>
 
 	<properties>
+		<!-- Hippo 10.2 versioning -->
 		<hippo-cms.version>3.2.0</hippo-cms.version>
+
 		<plugin.site.version>3.3</plugin.site.version>
 		<plugin.surefire.version>2.16</plugin.surefire.version>
-    	<plugin.jxr.version>2.2</plugin.jxr.version>
+    <plugin.jxr.version>2.2</plugin.jxr.version>
 	</properties>
 
 	<repositories>
@@ -114,6 +118,9 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>${plugin.site.version}</version>
+				<configuration>
+					<outputDirectory>docs</outputDirectory>
+				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
