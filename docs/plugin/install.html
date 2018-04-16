@@ -139,7 +139,7 @@
         
         <div id="bodyColumn"  class="span9" >
                                 
-            <!-- Copyright 2014 Hippo
+            <!-- Copyright 2018 Hippo
 
     Licensed under the Apache License, Version 2.0 (the  "License");
     you may not use this file except in compliance with the License.
@@ -193,7 +193,12 @@
         &lt;!-- NOTE: You should set a property named 'forge.documenttranslationpicker.version' to a version of this plugin! --&gt;
         &lt;dependency&gt;
           &lt;groupId&gt;org.onehippo.forge&lt;/groupId&gt;
-          &lt;artifactId&gt;documenttranslationpicker&lt;/artifactId&gt;
+          &lt;artifactId&gt;documenttranslationpicker-addon-cms&lt;/artifactId&gt;
+          &lt;version&gt;${forge.documenttranslationpicker.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+          &lt;groupId&gt;org.onehippo.forge&lt;/groupId&gt;
+          &lt;artifactId&gt;documenttranslationpicker-addon-repository&lt;/artifactId&gt;
           &lt;version&gt;${forge.documenttranslationpicker.version}&lt;/version&gt;
         &lt;/dependency&gt;
 
@@ -218,10 +223,14 @@
 
       &lt;!-- SNIP --&gt;
 
-      &lt;dependency&gt;
-        &lt;groupId&gt;org.onehippo.forge&lt;/groupId&gt;
-        &lt;artifactId&gt;documenttranslationpicker&lt;/artifactId&gt;
-      &lt;/dependency&gt;
+        &lt;dependency&gt;
+          &lt;groupId&gt;org.onehippo.forge&lt;/groupId&gt;
+          &lt;artifactId&gt;documenttranslationpicker-addon-cms&lt;/artifactId&gt;
+        &lt;/dependency&gt;
+        &lt;dependency&gt;
+          &lt;groupId&gt;org.onehippo.forge&lt;/groupId&gt;
+          &lt;artifactId&gt;documenttranslationpicker-addon-repository&lt;/artifactId&gt;
+        &lt;/dependency&gt;
 
       &lt;!-- SNIP --&gt;
 
