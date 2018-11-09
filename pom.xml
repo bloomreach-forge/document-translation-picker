@@ -60,7 +60,7 @@
     <hippo.cms.version>3.2.14</hippo.cms.version>
     <hippo.repository.version>3.2.11</hippo.repository.version>
 
-		<plugin.site.version>3.3</plugin.site.version>
+		<plugin.site.version>3.6</plugin.site.version>
 		<plugin.surefire.version>2.16</plugin.surefire.version>
     <plugin.jxr.version>2.2</plugin.jxr.version>
 	</properties>
