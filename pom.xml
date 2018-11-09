@@ -28,9 +28,9 @@
 	</organization>
 
 	<scm>
-		<connection>scm:git:git@github.com:onehippo-forge/document-translation-picker.git</connection>
-		<developerConnection>scm:git:git@github.com:onehippo-forge/document-translation-picker.git</developerConnection>
-		<url>https://github.com/onehippo-forge/document-translation-picker.git</url>
+		<connection>scm:git:git@github.com:bloomreach-forge/document-translation-picker.git</connection>
+		<developerConnection>scm:git:git@github.com:bloomreach-forge/document-translation-picker.git</developerConnection>
+		<url>https://github.com/bloomreach-forge/document-translation-picker.git</url>
 		<tag>HEAD</tag>
 	</scm>
 
