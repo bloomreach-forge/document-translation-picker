@@ -9,7 +9,7 @@
 
 	<groupId>org.onehippo.forge</groupId>
 	<artifactId>documenttranslationpicker</artifactId>
-	<version>2.0.1-SNAPSHOT</version>
+	<version>2.0.1</version>
 	<name>documenttranslationpicker</name>
 	<description>The documenttranslationpicker project provides a plugin to Hippo CMS. Enables editors to pick a translation for a document.</description>
 	<packaging>pom</packaging>
@@ -152,6 +152,22 @@
 						<groupId>org.apache.rat</groupId>
 						<artifactId>apache-rat-plugin</artifactId>
 						<inherited>false</inherited>
+					</plugin>
+				</plugins>
+			</build>
+		</profile>
+		<!-- Only for generating/publishing GitHub Site Pages into docs/ folder from master branch. -->
+		<profile>
+			<id>github.pages</id>
+			<build>
+				<plugins>
+					<plugin>
+						<groupId>org.apache.maven.plugins</groupId>
+						<artifactId>maven-site-plugin</artifactId>
+						<version>${plugin.site.version}</version>
+						<configuration>
+							<outputDirectory>docs</outputDirectory>
+						</configuration>
 					</plugin>
 				</plugins>
 			</build>
