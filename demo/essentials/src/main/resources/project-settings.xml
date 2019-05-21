@@ -7,9 +7,10 @@
     <confirmParams>false</confirmParams>
     <extraTemplates>true</extraTemplates>
     <projectNamespace>documenttranslationpickerdemo</projectNamespace>
-    <selectedBeansPackage>org.onehippo.forge.documenttranslationpicker.beans</selectedBeansPackage>
-    <selectedComponentsPackage>org.onehippo.forge.documenttranslationpicker.components</selectedComponentsPackage>
-    <selectedRestPackage>org.onehippo.forge.documenttranslationpicker.rest</selectedRestPackage>
+    <selectedBeansPackage>org.onehippo.forge.beans</selectedBeansPackage>
+    <selectedComponentsPackage>org.onehippo.forge.components</selectedComponentsPackage>
+    <selectedProjectPackage>org.onehippo.forge</selectedProjectPackage>
+    <selectedRestPackage>org.onehippo.forge.rest</selectedRestPackage>
     <setupDone>true</setupDone>
     <siteModule>site</siteModule>
     <templateLanguage>freemarker</templateLanguage>

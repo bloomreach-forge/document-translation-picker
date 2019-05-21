@@ -7,7 +7,7 @@
     <sv:value>mix:versionable</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:uuid" sv:type="String">
-    <sv:value>b88e1ded-ef4e-4d0b-9fb1-f310dca3bb47</sv:value>
+    <sv:value>011503be-3d74-4d19-a7bb-9d3bce72b619</sv:value>
   </sv:property>
   <sv:property sv:name="hippostd:foldertype" sv:type="String" sv:multiple="true">
     <sv:value>new-translated-folder</sv:value>

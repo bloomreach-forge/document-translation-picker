@@ -5,21 +5,13 @@
   <parent>
     <groupId>org.onehippo.forge</groupId>
     <artifactId>documenttranslationpicker-demo</artifactId>
-    <version>1.0.2-SNAPSHOT</version>
+    <version>2.0.0-SNAPSHOT</version>
   </parent>
   <artifactId>documenttranslationpicker-demo-site</artifactId>
   <packaging>war</packaging>
-  <name>Demo Project Site</name>
-  <description>Demo Project Site</description>
+  <name>Document Translation Picker - Demo Site</name>
+  <description>Document Translation Picker - Demo Site</description>
   <dependencies>
-    <dependency>
-      <groupId>org.onehippo.cms7</groupId>
-      <artifactId>hippo-essentials-plugin-sdk-api</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.onehippo.cms7</groupId>
-      <artifactId>hippo-essentials-components-hst</artifactId>
-    </dependency>
     <dependency>
       <groupId>javax.servlet.jsp</groupId>
       <artifactId>jsp-api</artifactId>
@@ -81,6 +73,14 @@
       <artifactId>hippo-plugin-selections-hst-client</artifactId>
     </dependency>
     <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-essentials-plugin-sdk-api</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.onehippo.cms7</groupId>
+      <artifactId>hippo-essentials-components-hst</artifactId>
+    </dependency>
+    <dependency>
       <groupId>org.easymock</groupId>
       <artifactId>easymock</artifactId>
       <scope>test</scope>
@@ -117,22 +117,6 @@
           <container>
             <type>remote</type>
           </container>
-        </configuration>
-      </plugin>
-      <plugin>
-        <groupId>com.googlecode.mavenfilesync</groupId>
-        <artifactId>maven-filesync-plugin</artifactId>
-        <configuration>
-          <mappings>
-            <mapping>
-              <sourceFolder>src/main/resources</sourceFolder>
-              <destinationFolder>@../target/tomcat${cargo.tomcat.major.version}x/webapps/site/WEB-INF/classes</destinationFolder>
-            </mapping>
-            <mapping>
-              <sourceFolder>src/main/webapp</sourceFolder>
-              <destinationFolder>@../target/tomcat${cargo.tomcat.major.version}x/webapps/site</destinationFolder>
-            </mapping>
-          </mappings>
         </configuration>
       </plugin>
     </plugins>

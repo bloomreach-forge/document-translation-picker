@@ -9,6 +9,9 @@
     <sv:property sv:name="hst:componentconfigurationid" sv:type="String">
       <sv:value>hst:pages/homepage</sv:value>
     </sv:property>
+    <sv:property sv:name="hst:refId" sv:type="String">
+      <sv:value>root</sv:value>
+    </sv:property>
   </sv:node>
   <sv:node sv:name="_any_">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
@@ -29,22 +32,22 @@
       <sv:value>pagenotfound</sv:value>
     </sv:property>
   </sv:node>
-  <sv:node sv:name="content">
+  <sv:node sv:name="news">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hst:sitemapitem</sv:value>
     </sv:property>
     <sv:property sv:name="hst:componentconfigurationid" sv:type="String">
-      <sv:value>hst:pages/contentlist</sv:value>
+      <sv:value>hst:pages/newslist</sv:value>
     </sv:property>
     <sv:property sv:name="hst:relativecontentpath" sv:type="String">
-      <sv:value>content</sv:value>
+      <sv:value>news</sv:value>
     </sv:property>
     <sv:node sv:name="_any_.html">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>hst:sitemapitem</sv:value>
       </sv:property>
       <sv:property sv:name="hst:componentconfigurationid" sv:type="String">
-        <sv:value>hst:pages/contentpage</sv:value>
+        <sv:value>hst:pages/newspage</sv:value>
       </sv:property>
       <sv:property sv:name="hst:relativecontentpath" sv:type="String">
         <sv:value>${parent}/${1}</sv:value>
@@ -55,7 +58,7 @@
         <sv:value>hst:sitemapitem</sv:value>
       </sv:property>
       <sv:property sv:name="hst:componentconfigurationid" sv:type="String">
-        <sv:value>hst:pages/contentlist</sv:value>
+        <sv:value>hst:pages/newslist</sv:value>
       </sv:property>
       <sv:property sv:name="hst:relativecontentpath" sv:type="String">
         <sv:value>${parent}/${1}</sv:value>
