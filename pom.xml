@@ -14,23 +14,13 @@
 	<description>The documenttranslationpicker project provides a plugin to Hippo CMS. Enables editors to pick a translation for a document.</description>
 	<packaging>pom</packaging>
 	
-	<inceptionYear>2016</inceptionYear>
+	<inceptionYear>2019</inceptionYear>
 	<developers>
-		<developer>
-			<name>Ivor Boers</name>
-			<organization>Finalist</organization>
-			<organizationUrl>http://www.finalist.nl</organizationUrl>
-		</developer>
 		<developer>
 			<name>Saimir Muco</name>
 			<organization>Bloomreach BV</organization>
 		</developer>
 	</developers>
-
-	<organization>
-		<name>Finalist</name>
-		<url>http://www.finalist.nl</url>
-	</organization>
 
 	<scm>
 		<connection>scm:git:git@github.com:bloomreach-forge/document-translation-picker.git</connection>
@@ -61,10 +51,6 @@
 	</licenses>
 
 	<properties>
-		<!--&lt;!&ndash; Hippo 10.2 versioning &ndash;&gt;-->
-    <!--<hippo.cms.version>3.2.14</hippo.cms.version>-->
-    <!--<hippo.repository.version>3.2.11</hippo.repository.version>-->
-
 		<plugin.site.version>3.6</plugin.site.version>
 		<plugin.surefire.version>2.16</plugin.surefire.version>
     <plugin.jxr.version>2.2</plugin.jxr.version>
@@ -90,32 +76,7 @@
 	</repositories>
 
 	<dependencyManagement>
-    <!--<dependencies>-->
-		<!--<dependency>-->
-			<!--<groupId>org.onehippo.cms7</groupId>-->
-			<!--<artifactId>hippo-cms-api</artifactId>-->
-			<!--<version>${hippo.cms.version}</version>-->
-			<!--<scope>provided</scope>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>org.onehippo.cms7</groupId>-->
-			<!--<artifactId>hippo-repository-api</artifactId>-->
-			<!--<version>${hippo.repository.version}</version>-->
-			<!--<scope>provided</scope>-->
-		<!--</dependency>-->
-		<!--<dependency>-->
-			<!--<groupId>org.onehippo.cms7</groupId>-->
-			<!--<artifactId>hippo-repository-builtin</artifactId>-->
-			<!--<version>${hippo.repository.version}</version>-->
-			<!--<scope>provided</scope>-->
-		<!--</dependency>-->
-    <!--<dependency>-->
-      <!--<groupId>org.onehippo.cms7</groupId>-->
-      <!--<artifactId>hippo-repository-engine</artifactId>-->
-      <!--<version>${hippo.repository.version}</version>-->
-      <!--<scope>provided</scope>-->
-    <!--</dependency>-->
-    <!--</dependencies>-->
+
 	</dependencyManagement>
 
 	<build>
@@ -231,8 +192,6 @@
 		</plugins>
 	</reporting>
 
-	<contributors/>
-	<mailingLists/>
   <modules>
     <module>addon</module>
   </modules>
