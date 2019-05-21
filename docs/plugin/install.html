@@ -130,7 +130,13 @@
         &lt;!-- NOTE: You should set a property named 'forge.documenttranslationpicker.version' to a version of this plugin! --&gt;
         &lt;dependency&gt;
           &lt;groupId&gt;org.onehippo.forge&lt;/groupId&gt;
-          &lt;artifactId&gt;documenttranslationpicker&lt;/artifactId&gt;
+          &lt;artifactId&gt;documenttranslationpicker-repository&lt;/artifactId&gt;
+          &lt;version&gt;${forge.documenttranslationpicker.version}&lt;/version&gt;
+        &lt;/dependency&gt;
+
+        &lt;dependency&gt;
+          &lt;groupId&gt;org.onehippo.forge&lt;/groupId&gt;
+          &lt;artifactId&gt;documenttranslationpicker-frontend&lt;/artifactId&gt;
           &lt;version&gt;${forge.documenttranslationpicker.version}&lt;/version&gt;
         &lt;/dependency&gt;
 
@@ -157,7 +163,11 @@
 
       &lt;dependency&gt;
         &lt;groupId&gt;org.onehippo.forge&lt;/groupId&gt;
-        &lt;artifactId&gt;documenttranslationpicker&lt;/artifactId&gt;
+        &lt;artifactId&gt;documenttranslationpicker-repository&lt;/artifactId&gt;
+      &lt;/dependency&gt;
+      &lt;dependency&gt;
+        &lt;groupId&gt;org.onehippo.forge&lt;/groupId&gt;
+        &lt;artifactId&gt;documenttranslationpicker-frontend&lt;/artifactId&gt;
       &lt;/dependency&gt;
 
       &lt;!-- SNIP --&gt;
@@ -181,10 +191,7 @@
     <footer>
     <div class="container-fluid">
       <div class="row-fluid">
-          <p class="copyright">Copyright &copy;      2016&#x2013;2018
-        <a href="http://www.finalist.nl">Finalist</a>.
-      BloomReach Inc. All rights reserved.
-</p>
+          <p class="copyright">Copyright &copy;      2016&#x2013;2019 BloomReach Inc. All rights reserved.</p>
     </div>
             </div>
   </footer>
