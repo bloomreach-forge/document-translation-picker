@@ -1,0 +1,74 @@
+{
+  "hippo:templates":   {
+    "en":     {
+      "new-news-document": "new news item",
+      "new-resource-bundle": "new resource bundle",
+      "new-news-folder": "new news item folder",
+      "new-untranslated-folder": "new untranslated folder"
+    },
+    "nl":     {
+      "new-news-document": "nieuw nieuwsbericht",
+      "new-resource-bundle": "nieuwe resource bundle",
+      "new-news-folder": "nieuwe nieuwsmap",
+      "new-untranslated-folder": "nieuwe onvertaalde map"
+    },
+    "de":     {
+      "new-news-document": "Neue News",
+      "new-resource-bundle": "Neues Resource-Bundle",
+      "new-news-folder": "Neuer News-Ordner",
+      "new-untranslated-folder": "Neuer nicht übersetzter Ordner"
+    },
+    "fr":     {
+      "new-news-document": "nouveau message d'info",
+      "new-resource-bundle": "nouveau resource bundle",
+      "new-news-folder": "nouveau dossier messages d'info",
+      "new-untranslated-folder": "nouveau dossier non traduit"
+    }
+  },
+  "hippo:types": {"documenttranslationpickerdemo:newsdocument":   {
+    "en":     {
+      "documenttranslationpickerdemo:introduction": "Introduction",
+      "documenttranslationpickerdemo:location": "Location",
+      "documenttranslationpickerdemo:title": "Title",
+      "jcr:name": "News Item",
+      "documenttranslationpickerdemo:source": "Source",
+      "documenttranslationpickerdemo:author": "Author",
+      "documenttranslationpickerdemo:date": "Date",
+      "documenttranslationpickerdemo:image": "Image",
+      "documenttranslationpickerdemo:content": "Content"
+    },
+    "nl":     {
+      "documenttranslationpickerdemo:introduction": "Introductie",
+      "documenttranslationpickerdemo:location": "Locatie",
+      "documenttranslationpickerdemo:title": "Titel",
+      "jcr:name": "Nieuwsbericht",
+      "documenttranslationpickerdemo:source": "Bron",
+      "documenttranslationpickerdemo:author": "Auteur",
+      "documenttranslationpickerdemo:date": "Datum",
+      "documenttranslationpickerdemo:image": "Afbeelding",
+      "documenttranslationpickerdemo:content": "Inhoud"
+    },
+    "de":     {
+      "documenttranslationpickerdemo:introduction": "Einführung",
+      "documenttranslationpickerdemo:location": "Standort",
+      "documenttranslationpickerdemo:title": "Titel",
+      "jcr:name": "News",
+      "documenttranslationpickerdemo:source": "Quelle",
+      "documenttranslationpickerdemo:author": "Verfasser",
+      "documenttranslationpickerdemo:date": "Datum",
+      "documenttranslationpickerdemo:image": "Abbildung",
+      "documenttranslationpickerdemo:content": "Inhalt"
+    },
+    "fr":     {
+      "documenttranslationpickerdemo:introduction": "Introduction",
+      "documenttranslationpickerdemo:location": "Lieu",
+      "documenttranslationpickerdemo:title": "Titre",
+      "jcr:name": "Message d'info",
+      "documenttranslationpickerdemo:source": "Source",
+      "documenttranslationpickerdemo:author": "Auteur",
+      "documenttranslationpickerdemo:date": "Date",
+      "documenttranslationpickerdemo:image": "Image",
+      "documenttranslationpickerdemo:content": "Contenu"
+    }
+  }}
+}

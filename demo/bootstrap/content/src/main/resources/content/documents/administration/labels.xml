@@ -4,10 +4,9 @@
   </sv:property>
   <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
     <sv:value>mix:referenceable</sv:value>
-    <sv:value>hippo:translated</sv:value>
   </sv:property>
   <sv:property sv:name="jcr:uuid" sv:type="String">
-    <sv:value>03814553-7dd7-4eda-9642-d6c40682fff1</sv:value>
+    <sv:value>164f6cb0-faa5-45d8-9f13-bfdca3a51602</sv:value>
   </sv:property>
   <sv:property sv:name="hippostd:foldertype" sv:type="String" sv:multiple="true">
     <sv:value>new-resource-bundle</sv:value>
@@ -18,23 +17,15 @@
       <sv:value>hippo:handle</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>hippo:named</sv:value>
       <sv:value>mix:referenceable</sv:value>
-      <sv:value>hippo:translated</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>c82c1da7-ca85-4506-80aa-166fe1effc08</sv:value>
+      <sv:value>29d3c3d7-bb7d-4bff-a00c-a6e797307ec3</sv:value>
     </sv:property>
-    <sv:node sv:name="hippo:translation">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>hippo:translation</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippo:language" sv:type="String">
-        <sv:value/>
-      </sv:property>
-      <sv:property sv:name="hippo:message" sv:type="String">
-        <sv:value>Global</sv:value>
-      </sv:property>
-    </sv:node>
+    <sv:property sv:name="hippo:name" sv:type="String">
+      <sv:value>Global</sv:value>
+    </sv:property>
     <sv:node sv:name="global">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>resourcebundle:resourcebundle</sv:value>
@@ -43,7 +34,7 @@
         <sv:value>mix:referenceable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>76a20aa6-c3b9-4355-abc4-cb50ddafb36b</sv:value>
+        <sv:value>994d5be2-39c5-465e-afd7-3ba901cb5b0f</sv:value>
       </sv:property>
       <sv:property sv:name="hippo:availability" sv:type="String" sv:multiple="true">
         <sv:value>live</sv:value>
@@ -73,12 +64,6 @@
       <sv:property sv:name="hippostdpubwf:publicationDate" sv:type="Date">
         <sv:value>2014-08-21T22:10:54.657+02:00</sv:value>
       </sv:property>
-      <sv:property sv:name="hippotranslation:id" sv:type="String">
-        <sv:value>cc81448d-9daa-426a-88f6-6821bd66cd6d</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippotranslation:locale" sv:type="String">
-        <sv:value>document-type-locale</sv:value>
-      </sv:property>
       <sv:property sv:name="resourcebundle:descriptions" sv:type="String" sv:multiple="true">
         <sv:value>Text shown in the global page footer.</sv:value>
       </sv:property>
@@ -89,7 +74,7 @@
         <sv:value>footer.text</sv:value>
       </sv:property>
       <sv:property sv:name="resourcebundle:messages" sv:type="String" sv:multiple="true">
-        <sv:value>©2018</sv:value>
+        <sv:value>©2019</sv:value>
       </sv:property>
     </sv:node>
   </sv:node>
@@ -98,23 +83,15 @@
       <sv:value>hippo:handle</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>hippo:named</sv:value>
       <sv:value>mix:referenceable</sv:value>
-      <sv:value>hippo:translated</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>3b915d1e-a824-4fb9-ad17-1b0eb4f6beba</sv:value>
+      <sv:value>fc6a2b78-9e5c-4e80-a7e6-b2cb9bf6ad71</sv:value>
     </sv:property>
-    <sv:node sv:name="hippo:translation">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>hippo:translation</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippo:language" sv:type="String">
-        <sv:value/>
-      </sv:property>
-      <sv:property sv:name="hippo:message" sv:type="String">
-        <sv:value>Homepage</sv:value>
-      </sv:property>
-    </sv:node>
+    <sv:property sv:name="hippo:name" sv:type="String">
+      <sv:value>Homepage</sv:value>
+    </sv:property>
     <sv:node sv:name="homepage">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>resourcebundle:resourcebundle</sv:value>
@@ -123,7 +100,7 @@
         <sv:value>mix:referenceable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>b36a49dc-aa75-4a0f-b964-7a4551444a69</sv:value>
+        <sv:value>6b78172c-737e-4e9f-b0a9-6b7655260cae</sv:value>
       </sv:property>
       <sv:property sv:name="hippo:availability" sv:type="String" sv:multiple="true">
         <sv:value>live</sv:value>
@@ -153,12 +130,6 @@
       <sv:property sv:name="hippostdpubwf:publicationDate" sv:type="Date">
         <sv:value>2014-08-21T17:11:55.239+02:00</sv:value>
       </sv:property>
-      <sv:property sv:name="hippotranslation:id" sv:type="String">
-        <sv:value>fbaea224-b0d0-4406-a71b-75b553375de4</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippotranslation:locale" sv:type="String">
-        <sv:value>document-type-locale</sv:value>
-      </sv:property>
       <sv:property sv:name="resourcebundle:descriptions" sv:type="String" sv:multiple="true">
         <sv:value>Title displayed on homepage.</sv:value>
         <sv:value>Text displayed on homepage.</sv:value>
@@ -181,23 +152,15 @@
       <sv:value>hippo:handle</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>hippo:named</sv:value>
       <sv:value>mix:referenceable</sv:value>
-      <sv:value>hippo:translated</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>05117146-4fbe-433c-bd2c-d3588cc4852f</sv:value>
+      <sv:value>f372b4fa-08bf-486a-9404-7109caa1b71d</sv:value>
     </sv:property>
-    <sv:node sv:name="hippo:translation">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>hippo:translation</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippo:language" sv:type="String">
-        <sv:value/>
-      </sv:property>
-      <sv:property sv:name="hippo:message" sv:type="String">
-        <sv:value>Page not found</sv:value>
-      </sv:property>
-    </sv:node>
+    <sv:property sv:name="hippo:name" sv:type="String">
+      <sv:value>Page not found</sv:value>
+    </sv:property>
     <sv:node sv:name="pagenotfound">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>resourcebundle:resourcebundle</sv:value>
@@ -206,7 +169,7 @@
         <sv:value>mix:referenceable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>58ba077e-9d59-4056-99d8-04308dc89501</sv:value>
+        <sv:value>e5db3bea-ae1e-448e-8e76-053ee5398270</sv:value>
       </sv:property>
       <sv:property sv:name="hippo:availability" sv:type="String" sv:multiple="true">
         <sv:value>live</sv:value>
@@ -236,12 +199,6 @@
       <sv:property sv:name="hippostdpubwf:publicationDate" sv:type="Date">
         <sv:value>2014-08-21T17:11:55.239+02:00</sv:value>
       </sv:property>
-      <sv:property sv:name="hippotranslation:id" sv:type="String">
-        <sv:value>618d7abd-7d95-4501-a61f-2af6a1c16f56</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippotranslation:locale" sv:type="String">
-        <sv:value>document-type-locale</sv:value>
-      </sv:property>
       <sv:property sv:name="resourcebundle:descriptions" sv:type="String" sv:multiple="true">
         <sv:value>Title displayed when page is not found.</sv:value>
         <sv:value>Text displayed when page is not found.</sv:value>
@@ -264,23 +221,15 @@
       <sv:value>hippo:handle</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:mixinTypes" sv:type="Name" sv:multiple="true">
+      <sv:value>hippo:named</sv:value>
       <sv:value>mix:referenceable</sv:value>
-      <sv:value>hippo:translated</sv:value>
     </sv:property>
     <sv:property sv:name="jcr:uuid" sv:type="String">
-      <sv:value>54448896-c56e-4187-9bfc-23ce686373be</sv:value>
+      <sv:value>e1c4cdae-85db-44e5-98c8-7fb913ec6e40</sv:value>
     </sv:property>
-    <sv:node sv:name="hippo:translation">
-      <sv:property sv:name="jcr:primaryType" sv:type="Name">
-        <sv:value>hippo:translation</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippo:language" sv:type="String">
-        <sv:value/>
-      </sv:property>
-      <sv:property sv:name="hippo:message" sv:type="String">
-        <sv:value>Pagination</sv:value>
-      </sv:property>
-    </sv:node>
+    <sv:property sv:name="hippo:name" sv:type="String">
+      <sv:value>Pagination</sv:value>
+    </sv:property>
     <sv:node sv:name="pagination">
       <sv:property sv:name="jcr:primaryType" sv:type="Name">
         <sv:value>resourcebundle:resourcebundle</sv:value>
@@ -289,7 +238,7 @@
         <sv:value>mix:referenceable</sv:value>
       </sv:property>
       <sv:property sv:name="jcr:uuid" sv:type="String">
-        <sv:value>4a4afb2b-a71b-4a6a-9b46-12042add8e48</sv:value>
+        <sv:value>cb19b3e2-a3d0-490d-93fb-658b825f14dd</sv:value>
       </sv:property>
       <sv:property sv:name="hippo:availability" sv:type="String" sv:multiple="true">
         <sv:value>live</sv:value>
@@ -318,12 +267,6 @@
       </sv:property>
       <sv:property sv:name="hippostdpubwf:publicationDate" sv:type="Date">
         <sv:value>2014-08-21T17:06:47.420+02:00</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippotranslation:id" sv:type="String">
-        <sv:value>ea61dcea-89c7-4829-8687-e51184702651</sv:value>
-      </sv:property>
-      <sv:property sv:name="hippotranslation:locale" sv:type="String">
-        <sv:value>document-type-locale</sv:value>
       </sv:property>
       <sv:property sv:name="resourcebundle:descriptions" sv:type="String" sv:multiple="true">
         <sv:value>Used in the indication, how many results were found. The label is appended to the number of results.</sv:value>

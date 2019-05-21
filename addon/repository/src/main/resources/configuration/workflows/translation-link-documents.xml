@@ -1,0 +1,36 @@
+<?xml version="1.0" encoding="UTF-8"?><sv:node xmlns:sv="http://www.jcp.org/jcr/sv/1.0" sv:name="translation-link-documents">
+  <sv:property sv:name="jcr:primaryType" sv:type="Name">
+    <sv:value>hipposys:workflowcategory</sv:value>
+  </sv:property>
+  <sv:node sv:name="default">
+    <sv:property sv:name="jcr:primaryType" sv:type="Name">
+      <sv:value>frontend:workflow</sv:value>
+    </sv:property>
+    <sv:property sv:name="hipposys:classname" sv:type="String">
+      <sv:value>org.hippoecm.repository.translation.impl.TranslationWorkflowImpl</sv:value>
+    </sv:property>
+    <sv:property sv:name="hipposys:display" sv:type="String">
+      <sv:value>Translation workflow</sv:value>
+    </sv:property>
+    <sv:property sv:name="hipposys:nodetype" sv:type="String">
+      <sv:value>hippotranslation:translated</sv:value>
+    </sv:property>
+    <sv:property sv:name="hipposys:privileges" sv:type="String" sv:multiple="true">
+      <sv:value>hippo:author</sv:value>
+    </sv:property>
+    <sv:node sv:name="frontend:renderer">
+      <sv:property sv:name="jcr:primaryType" sv:type="Name">
+        <sv:value>frontend:plugin</sv:value>
+      </sv:property>
+      <sv:property sv:name="last.visited.enabled" sv:type="String">
+        <sv:value>false</sv:value>
+      </sv:property>
+      <sv:property sv:name="linkpicker.cluster.name" sv:type="String">
+        <sv:value>cms-pickers/documents-only</sv:value>
+      </sv:property>
+      <sv:property sv:name="plugin.class" sv:type="String">
+        <sv:value>org.onehippo.forge.documenttranslationpicker.plugin.LinkTranslationsWorkflowPlugin</sv:value>
+      </sv:property>
+    </sv:node>
+  </sv:node>
+</sv:node>
