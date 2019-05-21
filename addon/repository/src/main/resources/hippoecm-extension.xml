@@ -3,7 +3,7 @@
   <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializefolder</sv:value>
   </sv:property>
-  <sv:node sv:name="uva-hippo-configuration-hippo-workflows-translation-link-documents">
+  <sv:node sv:name="hippo-configuration-hippo-workflows-translation-link-documents">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
@@ -18,7 +18,7 @@
     </sv:property>
   </sv:node>
 
-  <sv:node sv:name="uva-hippo-configuration-hippo-frontend-cms-cms-preview-workflowPlugin-workflow-categories-add-translation-link-documents">
+  <sv:node sv:name="hippo-configuration-hippo-frontend-cms-cms-preview-workflowPlugin-workflow-categories-add-translation-link-documents">
     <sv:property sv:name="jcr:primaryType" sv:type="Name">
       <sv:value>hippo:initializeitem</sv:value>
     </sv:property>
