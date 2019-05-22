@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-    Copyright 2015 Hippo
+    Copyright 2015-2019 Bloomreach BV
 
     Licensed to the Apache Software Foundation (ASF) under one or more
     contributor license agreements.  See the NOTICE file distributed with
@@ -30,10 +30,31 @@
           <th>Hippo CMS Release version</th>
         </tr>
         <tr>
+          <td>3.x.x</td>
+          <td>12.x.x</td>
+        </tr>
+        <tr>
+          <td>2.x.x</td>
+          <td>11.2.x</td>
+        </tr>
+        <tr>
           <td>1.x.x</td>
           <td>10.2.x</td>
         </tr>
       </table>
+    </section>
+    <section name="Release Notes (3.x.x)">
+      <subsection name="3.0.0">
+        <p>Initial Release for brXM 12.2.x</p>
+      </subsection>
+    </section>
+    <section name="Release Notes (2.x.x)">
+      <subsection name="2.0.1">
+        <p>Fix bootstrap</p>
+      </subsection>
+      <subsection name="2.0.0">
+        <p>New implementation based on Hippo CMS 11.2. Makes use of a document editor menu and dialog to browse for the document to link translations from the actual one</p>
+      </subsection>
     </section>
     <section name="Release Notes (1.x.x)">
       <subsection name="1.0.0">
