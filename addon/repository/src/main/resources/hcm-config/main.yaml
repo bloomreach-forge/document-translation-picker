@@ -1,0 +1,7 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:frontend/cms/cms-preview/workflowPlugin:
+      workflow.categories:
+        operation: add
+        type: string
+        value: [translation-link-documents]

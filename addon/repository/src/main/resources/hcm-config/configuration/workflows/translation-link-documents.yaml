@@ -1,0 +1,15 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:workflows/translation-link-documents:
+      jcr:primaryType: hipposys:workflowcategory
+      /default:
+        jcr:primaryType: frontend:workflow
+        hipposys:classname: org.hippoecm.repository.translation.impl.TranslationWorkflowImpl
+        hipposys:display: Translation workflow
+        hipposys:nodetype: hippotranslation:translated
+        hipposys:privileges: ['hippo:author']
+        /frontend:renderer:
+          jcr:primaryType: frontend:plugin
+          last.visited.enabled: 'false'
+          linkpicker.cluster.name: cms-pickers/documents-only
+          plugin.class: org.onehippo.forge.documenttranslationpicker.plugin.LinkTranslationsWorkflowPlugin
