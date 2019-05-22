@@ -1,6 +1,6 @@
 package org.onehippo.forge.beans;
 /*
- * Copyright 2014 Hippo B.V. (http://www.onehippo.com)
+ * Copyright 2014-2018 Hippo B.V. (http://www.onehippo.com)
  *
  * Licensed under the Apache License, Version 2.0 (the "License");
  * you may not use this file except in compliance with the License.
@@ -29,16 +29,16 @@ public class NewsDocument extends HippoDocument {
     /**
      * The document type of the news document.
      */
-    public final static String DOCUMENT_TYPE = "documenttranslationpickerdemo:newsdocument";
+    public static final String DOCUMENT_TYPE = "documenttranslationpickerdemo:newsdocument";
 
-    private final static String TITLE = "documenttranslationpickerdemo:title";
-    private final static String DATE = "documenttranslationpickerdemo:date";
-    private final static String INTRODUCTION = "documenttranslationpickerdemo:introduction";
-    private final static String IMAGE = "documenttranslationpickerdemo:image";
-    private final static String CONTENT = "documenttranslationpickerdemo:content";
-    private final static String LOCATION = "documenttranslationpickerdemo:location";
-    private final static String AUTHOR = "documenttranslationpickerdemo:author";
-    private final static String SOURCE = "documenttranslationpickerdemo:source";
+    private static final String TITLE = "documenttranslationpickerdemo:title";
+    private static final String DATE = "documenttranslationpickerdemo:date";
+    private static final String INTRODUCTION = "documenttranslationpickerdemo:introduction";
+    private static final String IMAGE = "documenttranslationpickerdemo:image";
+    private static final String CONTENT = "documenttranslationpickerdemo:content";
+    private static final String LOCATION = "documenttranslationpickerdemo:location";
+    private static final String AUTHOR = "documenttranslationpickerdemo:author";
+    private static final String SOURCE = "documenttranslationpickerdemo:source";
 
     /**
      * Get the title of the document.

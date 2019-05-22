@@ -1,0 +1,4 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/documenttranslationpickerdemo/hst:workspace:
+      jcr:primaryType: hst:workspace

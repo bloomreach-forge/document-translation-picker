@@ -1,0 +1,8 @@
+/content/documents/document-translation-picker-demo-nl:
+  jcr:primaryType: hippostd:folder
+  jcr:mixinTypes: ['hippo:named', 'hippotranslation:translated', 'mix:versionable']
+  jcr:uuid: a1247183-f1b8-4251-9578-25df3d22a73b
+  hippo:name: Document Translation Picker Demo NL
+  hippostd:foldertype: [new-translated-folder, new-document]
+  hippotranslation:id: 996bcac5-86cf-49b5-a7a3-16a74863e814
+  hippotranslation:locale: nl
