@@ -1,0 +1,6 @@
+definitions:
+  config:
+    /hippo:namespaces/documenttranslationpickerdemo:
+      jcr:primaryType: hipposysedit:namespace
+      jcr:mixinTypes: ['mix:referenceable']
+      jcr:uuid: ddd0045f-cc71-4d3e-b864-ce78f6b58ca5

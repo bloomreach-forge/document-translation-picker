@@ -1,0 +1,5 @@
+group: 
+  name: documenttranslationpicker-demo
+project: documenttranslationpicker-demo
+module:
+  name: documenttranslationpicker-demo-repository-data-webfiles

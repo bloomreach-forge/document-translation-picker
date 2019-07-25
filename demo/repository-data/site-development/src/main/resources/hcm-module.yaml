@@ -1,0 +1,6 @@
+site: documenttranslationpicker-demo
+group: documenttranslationpicker-demo
+project: documenttranslationpicker-demo
+module:
+  name: documenttranslationpicker-demo-repository-data-site-development
+  after: documenttranslationpicker-demo-repository-data-site
