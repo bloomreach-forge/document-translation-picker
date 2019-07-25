@@ -1,5 +1,0 @@
-group: 
-  name: documenttranslationpicker-demo
-  after: hippo-cms
-project: documenttranslationpicker-demo
-module: documenttranslationpicker-demo-repository-data-webfiles
