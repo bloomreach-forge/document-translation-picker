@@ -9,8 +9,8 @@
 
 	<groupId>org.onehippo.forge</groupId>
 	<artifactId>documenttranslationpicker</artifactId>
-	<version>3.0.2-SNAPSHOT</version>
-	<name>documenttranslationpicker</name>
+  <name>Document Translation Picker Plugin</name>
+	<version>4.0.0</version>
 	<description>The documenttranslationpicker project provides a plugin to Hippo CMS. Enables editors to pick a translation for a document.</description>
 	<packaging>pom</packaging>
 	
@@ -94,9 +94,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>${plugin.site.version}</version>
-				<configuration>
-					<outputDirectory>docs</outputDirectory>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>

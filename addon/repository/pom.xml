@@ -5,9 +5,9 @@
   <parent>
     <groupId>org.onehippo.forge</groupId>
     <artifactId>documenttranslationpicker-addon</artifactId>
-    <version>3.0.2-SNAPSHOT</version>
+    <version>4.0.0</version>
   </parent>
 
   <artifactId>documenttranslationpicker-addon-repository</artifactId>
-  <name>Document Translation Picker CMS Addon - Repository</name>
+  <name>Document Translation Picker Plugin - Repository</name>
 </project>
