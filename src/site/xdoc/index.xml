@@ -3,7 +3,7 @@
   "-//Apache Software Foundation//DTD XDOC 1.0//EN"
   "http://maven.apache.org/dtd/xdoc_1_0.dtd">
 <!--
-    Copyright 2014 Hippo
+    Copyright 2014-2019 Bloomreach
 
     Licensed under the Apache License, Version 2.0 (the  "License");
     you may not use this file except in compliance with the License.
@@ -19,19 +19,19 @@
 -->
 <document>
   <properties>
-    <title>Hippo CMS - Document Translation Picker</title>
+    <title>brXM - Document Translation Picker</title>
   </properties>
   <body>
     <section name="Hippo CMS - Document Translation Picker">
       <p>
-        The document translation picker project provides a plugin to Hippo CMS. It enables editors to pick existing documents as a translation for a document.
+        The document translation picker project provides a plugin to the CMS interface. It enables editors to pick existing documents as a translation for a document.
       </p>
       <subsection name="Usage">
         <p>
-          This plugin adds a submenu item to the 'document' item in the toolbar. A CMS user can use it to open a dialog and select existing documents in translated folders. These documents will get the same, newly created, translationID as the current document.
+          This plugin adds a menu item to the 'document' item in the toolbar. A CMS user can use it to open a dialog and select existing documents in translated folders. These documents will get the same, newly created, translationID as the current document.
         </p>
         <div class="screenshotpart">
-          <img src="images/screenshot.png" alt="Screenshot of the Document Translation Picker dialog"/>
+          <img src="images/screenshot.png" alt="Screenshot of the Document Translation Picker menu"/>
         </div>
       </subsection>
     </section>

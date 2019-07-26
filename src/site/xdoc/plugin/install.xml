@@ -56,7 +56,13 @@
         <!-- NOTE: You should set a property named 'forge.documenttranslationpicker.version' to a version of this plugin! -->
         <dependency>
           <groupId>org.onehippo.forge</groupId>
-          <artifactId>documenttranslationpicker</artifactId>
+          <artifactId>documenttranslationpicker-addon-repository</artifactId>
+          <version>${forge.documenttranslationpicker.version}</version>
+        </dependency>
+
+        <dependency>
+          <groupId>org.onehippo.forge</groupId>
+          <artifactId>documenttranslationpicker-addon-frontend</artifactId>
           <version>${forge.documenttranslationpicker.version}</version>
         </dependency>
 
@@ -80,7 +86,11 @@
 
       <dependency>
         <groupId>org.onehippo.forge</groupId>
-        <artifactId>documenttranslationpicker</artifactId>
+        <artifactId>documenttranslationpicker-addon-repository</artifactId>
+      </dependency>
+      <dependency>
+        <groupId>org.onehippo.forge</groupId>
+        <artifactId>documenttranslationpicker-addon-frontend</artifactId>
       </dependency>
 
       <!-- SNIP -->
