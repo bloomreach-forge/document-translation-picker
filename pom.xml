@@ -4,12 +4,12 @@
 	<parent>
 		<groupId>org.onehippo.cms7</groupId>
 		<artifactId>hippo-cms7-release</artifactId>
-		<version>12.6.2</version>
+		<version>13.3.0</version>
 	</parent>
 
 	<groupId>org.onehippo.forge</groupId>
 	<artifactId>documenttranslationpicker</artifactId>
-	<version>3.0.0</version>
+	<version>3.0.1-SNAPSHOT</version>
 	<name>documenttranslationpicker</name>
 	<description>The documenttranslationpicker project provides a plugin to Hippo CMS. Enables editors to pick a translation for a document.</description>
 	<packaging>pom</packaging>

@@ -3,19 +3,19 @@ definitions:
     /hippo:namespaces/documenttranslationpickerdemo/newsdocument:
       jcr:primaryType: hipposysedit:templatetype
       jcr:mixinTypes: ['editor:editable', 'mix:referenceable']
-      jcr:uuid: 9d3b4069-1f19-4ea6-b1e0-7868b5de25e3
+      jcr:uuid: 57477323-8337-4b06-8b56-fef6e2ed4f43
       /hipposysedit:nodetype:
         jcr:primaryType: hippo:handle
         jcr:mixinTypes: ['mix:referenceable']
-        jcr:uuid: 744bd3b9-2737-4998-882f-a286c9940fe3
+        jcr:uuid: 16719882-1157-47d2-aabf-83027a79790c
         /hipposysedit:nodetype:
           jcr:primaryType: hipposysedit:nodetype
           jcr:mixinTypes: ['hipposysedit:remodel', 'mix:referenceable']
-          jcr:uuid: 5e2b3cfa-46b7-4523-a8f4-d62940817078
+          jcr:uuid: e31e9630-0c56-406a-9523-a0cd818eac89
           hipposysedit:node: true
           hipposysedit:supertype: ['documenttranslationpickerdemo:basedocument', 'hippostd:relaxed',
             'hippotranslation:translated']
-          hipposysedit:uri: http://www.onehippo.org/documenttranslationpickerdemo/nt/1.0
+          hipposysedit:uri: http://www.documenttranslationpickerdemo.com/documenttranslationpickerdemo/nt/1.0
           /title:
             jcr:primaryType: hipposysedit:field
             hipposysedit:mandatory: false
@@ -86,7 +86,7 @@ definitions:
         /hipposysedit:prototype:
           jcr:primaryType: documenttranslationpickerdemo:newsdocument
           jcr:mixinTypes: ['mix:referenceable']
-          jcr:uuid: 1445dd20-5577-45e4-9ba8-9de2aad44577
+          jcr:uuid: 542d8109-a8d5-422a-a2c5-56056503d80b
           documenttranslationpickerdemo:date: 0001-01-01T13:00:00+01:00
           documenttranslationpickerdemo:documenttype: news
           documenttranslationpickerdemo:introduction: ''

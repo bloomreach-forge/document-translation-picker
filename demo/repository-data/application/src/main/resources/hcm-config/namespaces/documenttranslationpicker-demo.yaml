@@ -3,4 +3,4 @@ definitions:
     /hippo:namespaces/documenttranslationpickerdemo:
       jcr:primaryType: hipposysedit:namespace
       jcr:mixinTypes: ['mix:referenceable']
-      jcr:uuid: 1f50ac4a-f8d9-4b95-802a-dc1193b63986
+      jcr:uuid: ddd0045f-cc71-4d3e-b864-ce78f6b58ca5

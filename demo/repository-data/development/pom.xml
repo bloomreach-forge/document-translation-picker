@@ -5,11 +5,11 @@
   <parent>
     <groupId>org.onehippo.forge</groupId>
     <artifactId>documenttranslationpicker-demo-repository-data</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
   </parent>
 
-  <name>Document Translation Picker - Demo Repository Data For Development</name>
-  <description>Document Translation Picker - Demo Repository Data For Development</description>
+  <name>documenttranslationpicker-demo Repository Data For Development</name>
+  <description>documenttranslationpicker-demo Repository Data For Development</description>
   <artifactId>documenttranslationpicker-demo-repository-data-development</artifactId>
 
   <build>

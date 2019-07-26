@@ -5,12 +5,12 @@
   <parent>
     <groupId>org.onehippo.forge</groupId>
     <artifactId>documenttranslationpicker-demo</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
   </parent>
   <artifactId>documenttranslationpicker-demo-essentials</artifactId>
   <packaging>war</packaging>
-  <name>Document Translation Picker - Demo Essentials</name>
-  <description>Document Translation Picker - Demo Essentials</description>
+  <name>documenttranslationpicker-demo Essentials</name>
+  <description>documenttranslationpicker-demo Essentials</description>
   <dependencies>
     <dependency>
       <groupId>org.onehippo.cms7</groupId>

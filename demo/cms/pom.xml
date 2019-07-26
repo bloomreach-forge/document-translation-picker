@@ -5,71 +5,30 @@
   <parent>
     <groupId>org.onehippo.forge</groupId>
     <artifactId>documenttranslationpicker-demo</artifactId>
-    <version>3.0.0</version>
+    <version>3.0.1</version>
   </parent>
   <artifactId>documenttranslationpicker-demo-cms</artifactId>
   <packaging>war</packaging>
-  <name>Document Translation Picker - Demo CMS</name>
-  <description>Document Translation Picker - Demo CMS</description>
+  <name>documenttranslationpicker-demo CMS</name>
+  <description>documenttranslationpicker-demo CMS</description>
   <dependencies>
-
     <dependency>
       <groupId>org.onehippo.forge</groupId>
       <artifactId>documenttranslationpicker-addon-repository</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.onehippo.forge</groupId>
-      <artifactId>documenttranslationpicker-addon-frontend</artifactId>
+      <version>${project.version}</version>
     </dependency>
 
     <dependency>
-      <groupId>org.onehippo.cms7.hst.dependencies</groupId>
-      <artifactId>hst-repository-dependencies</artifactId>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.onehippo.cms7.hst.dependencies</groupId>
-      <artifactId>hst-cms-dependencies</artifactId>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.onehippo.cms7</groupId>
-      <artifactId>hippo-package-cms-dependencies</artifactId>
-      <type>pom</type>
-    </dependency>
-    <dependency>
-      <groupId>org.onehippo.cms7</groupId>
-      <artifactId>hippo-addon-channel-manager-frontend</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.onehippo.cms7</groupId>
-      <artifactId>hippo-addon-channel-manager-repository</artifactId>
-    </dependency>
-    <dependency>
       <groupId>org.onehippo.forge</groupId>
-      <artifactId>documenttranslationpicker-demo-repository-data-application</artifactId>
+      <artifactId>documenttranslationpicker-addon-frontend</artifactId>
       <version>${project.version}</version>
     </dependency>
+    
     <dependency>
-      <groupId>org.onehippo.forge</groupId>
-      <artifactId>documenttranslationpicker-demo-repository-data-webfiles</artifactId>
+      <groupId>${project.groupId}</groupId>
+      <artifactId>documenttranslationpicker-demo-cms-dependencies</artifactId>
       <version>${project.version}</version>
-    </dependency>
-    <dependency>
-      <groupId>org.onehippo.cms7</groupId>
-      <artifactId>hippo-plugin-gallerypicker</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.onehippo.cms7</groupId>
-      <artifactId>hippo-plugin-resourcebundle-editor</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.onehippo.cms7</groupId>
-      <artifactId>hippo-plugin-selections-addon-cms</artifactId>
-    </dependency>
-    <dependency>
-      <groupId>org.onehippo.cms7</groupId>
-      <artifactId>hippo-plugin-selections-addon-repository</artifactId>
+      <type>pom</type>
     </dependency>
   </dependencies>
   <build>
@@ -80,7 +39,7 @@
         <configuration>
           <archive>
             <manifestEntries>
-              <Hippo-Release-Version>${hippo.release.version}</Hippo-Release-Version>
+              <BloomReach-Release-Version>${hippo.release.version}</BloomReach-Release-Version>
               <Project-Version>${project.version}</Project-Version>
               <Project-Build>${buildNumber}</Project-Build>
             </manifestEntries>

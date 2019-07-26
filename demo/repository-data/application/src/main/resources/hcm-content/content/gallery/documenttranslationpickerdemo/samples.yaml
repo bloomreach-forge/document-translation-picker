@@ -1,7 +1,7 @@
 /content/gallery/documenttranslationpickerdemo/samples:
   jcr:primaryType: hippogallery:stdImageGallery
   jcr:mixinTypes: ['mix:referenceable']
-  jcr:uuid: 41c2d97e-73c1-47fb-b7a9-e7f0ddc228dd
+  jcr:uuid: c4d125e6-9d42-4223-8988-409cffe49fee
   hippostd:foldertype: [new-image-folder]
   hippostd:gallerytype: ['hippogallery:imageset']
   /viognier-grapes-188185_640.jpg:
@@ -11,7 +11,7 @@
     /viognier-grapes-188185_640.jpg:
       jcr:primaryType: hippogallery:imageset
       jcr:mixinTypes: ['mix:referenceable']
-      jcr:uuid: 31f4b7eb-4fa7-4e06-afc5-476fb0d840c8
+      jcr:uuid: 489a5537-083e-45c9-8f0e-19fdcc2c5405
       hippo:availability: [live, preview]
       hippogallery:description: Description for viognier-grapes-188185_640.jpg
       hippogallery:filename: viognier-grapes-188185_640.jpg
@@ -40,7 +40,7 @@
     /animal-2883_640.jpg:
       jcr:primaryType: hippogallery:imageset
       jcr:mixinTypes: ['mix:referenceable']
-      jcr:uuid: 5cf93aec-77c0-4d2b-903a-e4680d1753a4
+      jcr:uuid: 6e512f15-780b-4de1-b5bd-02dc9a8e1dd4
       hippo:availability: [live, preview]
       hippogallery:description: Description for animal-2883_640.jpg
       hippogallery:filename: animal-2883_640.jpg
@@ -69,7 +69,7 @@
     /snail-193611_640.jpg:
       jcr:primaryType: hippogallery:imageset
       jcr:mixinTypes: ['mix:referenceable']
-      jcr:uuid: 974ed078-7749-4289-a480-fb8918c9ba18
+      jcr:uuid: 3825bb4b-5b38-4a14-9cd1-274a48cf19a3
       hippo:availability: [live, preview]
       hippogallery:description: Description for snail-193611_640.jpg
       hippogallery:filename: snail-193611_640.jpg
