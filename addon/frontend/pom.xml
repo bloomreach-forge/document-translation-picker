@@ -9,7 +9,7 @@
   </parent>
 
   <artifactId>documenttranslationpicker-addon-frontend</artifactId>
-  <name>Document Translation Picker CMS Addon - Frontend</name>
+  <name>Document Translation Picker Plugin - Frontend</name>
 
   <dependencies>
     <dependency>

@@ -9,5 +9,5 @@
   </parent>
 
   <artifactId>documenttranslationpicker-addon-repository</artifactId>
-  <name>Document Translation Picker CMS Addon - Repository</name>
+  <name>Document Translation Picker Plugin - Repository</name>
 </project>
