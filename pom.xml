@@ -51,7 +51,7 @@
 	</licenses>
 
 	<properties>
-		<plugin.site.version>3.6</plugin.site.version>
+		<plugin.site.version>3.7.1</plugin.site.version>
 		<plugin.surefire.version>2.16</plugin.surefire.version>
     <plugin.jxr.version>2.2</plugin.jxr.version>
 	</properties>
