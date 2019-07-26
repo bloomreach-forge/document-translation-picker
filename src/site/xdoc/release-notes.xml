@@ -30,44 +30,54 @@
           <th>Hippo CMS Release version</th>
         </tr>
         <tr>
-          <td>3.0.1</td>
-          <td>13.x.x</td>
+          <td>4.x</td>
+          <td>13.x</td>
         </tr>
         <tr>
-          <td>3.0.0</td>
-          <td>12.x.x</td>
+          <td>3.x</td>
+          <td>12.x</td>
         </tr>
         <tr>
-          <td>2.x.x</td>
+          <td>2.x</td>
           <td>11.2.x</td>
         </tr>
         <tr>
-          <td>1.x.x</td>
+          <td>1.x</td>
           <td>10.2.x</td>
         </tr>
       </table>
     </section>
-    <section name="Release Notes (3.0.1)">
-      <subsection name="3.0.1">
-        <p>Initial Release for brXM 13.2.x</p>
+    <section name="Release Notes">
+      <subsection name="4.0.0">
+        <p class="smallinfo">Release Date: 26 July 2019</p>
+        <ul>
+          <li>Upgrade to Experience Manager 13.</li>
+        </ul>
       </subsection>
-    </section>
-    <section name="Release Notes (3.x.x)">
       <subsection name="3.0.0">
-        <p>Initial Release for brXM 12.2.x</p>
+        <p class="smallinfo">Release Date: 22 May 2019</p>
+        <ul>
+          <li>Upgrade to Experience Manager 12.</li>
+        </ul>
       </subsection>
-    </section>
-    <section name="Release Notes (2.x.x)">
       <subsection name="2.0.1">
-        <p>Fix bootstrap</p>
+        <p class="smallinfo">Release Date: 21 May 2019</p>
+        <ul>
+          <li>Fix bootstrapping issue.</li>
+        </ul>
       </subsection>
       <subsection name="2.0.0">
-        <p>New implementation based on Hippo CMS 11.2. Makes use of a document editor menu and dialog to browse for the document to link translations from the actual one</p>
+        <p class="smallinfo">Release Date: 21 May 2019</p>
+        <ul>
+          <li>New implementation based on Hippo CMS 11.2. Makes use of a document editor menu and dialog to browse for
+            the document to link translations from the actual one.</li>
+        </ul>
       </subsection>
-    </section>
-    <section name="Release Notes (1.x.x)">
       <subsection name="1.0.0">
-        <p>Initial Release for Hippo CMS 10.2.x</p>
+        <p class="smallinfo">Release Date: 17 May 2016</p>
+        <ul>
+          <li>Initial Release for Hippo CMS 10.2.</li>
+        </ul>
       </subsection>
     </section>
   </body>
