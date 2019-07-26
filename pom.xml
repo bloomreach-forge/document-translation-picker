@@ -10,7 +10,7 @@
 	<groupId>org.onehippo.forge</groupId>
 	<artifactId>documenttranslationpicker</artifactId>
   <name>Document Translation Picker Plugin</name>
-	<version>4.0.1-SNAPSHOT</version>
+	<version>4.0.0-SNAPSHOT</version>
 	<description>The documenttranslationpicker project provides a plugin to Hippo CMS. Enables editors to pick a translation for a document.</description>
 	<packaging>pom</packaging>
 	
