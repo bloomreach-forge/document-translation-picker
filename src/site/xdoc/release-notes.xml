@@ -30,11 +30,11 @@
           <th>Hippo CMS Release version</th>
         </tr>
         <tr>
-          <td>3.0.1</td>
+          <td>4.x.x</td>
           <td>13.x.x</td>
         </tr>
         <tr>
-          <td>3.0.0</td>
+          <td>3.x.x</td>
           <td>12.x.x</td>
         </tr>
         <tr>
@@ -47,8 +47,8 @@
         </tr>
       </table>
     </section>
-    <section name="Release Notes (3.0.1)">
-      <subsection name="3.0.1">
+    <section name="Release Notes (4.0.0)">
+      <subsection name="4.0.0">
         <p>Initial Release for brXM 13.2.x</p>
       </subsection>
     </section>
