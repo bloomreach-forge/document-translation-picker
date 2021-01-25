@@ -1,0 +1,4 @@
+definitions:
+  config:
+    /hst:hst/hst:configurations/documenttranslationpickerdemo/hst:sitemap:
+      jcr:primaryType: hst:sitemap
