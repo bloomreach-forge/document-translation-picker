@@ -4,18 +4,27 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.onehippo.forge</groupId>
-    <artifactId>documenttranslationpicker-demo</artifactId>
+    <artifactId>documenttranslationpickerdemo</artifactId>
     <version>4.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>documenttranslationpicker-demo-cms-dependencies</artifactId>
+  <artifactId>documenttranslationpickerdemo-cms-dependencies</artifactId>
   <packaging>pom</packaging>
-  <name>documenttranslationpicker-demo CMS Dependencies</name>
-  <description>documenttranslationpicker-demo CMS Dependencies</description>
+  <name>Document Translation Picker Demo CMS Dependencies</name>
+  <description>Document Translation Picker Demo CMS Dependencies</description>
   <dependencies>
 
     <dependency>
       <groupId>org.onehippo.forge</groupId>
-      <artifactId>documenttranslationpicker-demo-repository-data-application</artifactId>
+      <artifactId>documenttranslationpicker-addon-repository</artifactId>
+    </dependency>
+
+    <dependency>
+      <groupId>org.onehippo.forge</groupId>
+      <artifactId>documenttranslationpicker-addon-frontend</artifactId>
+    </dependency>
+    <dependency>
+      <groupId>org.onehippo.forge</groupId>
+      <artifactId>documenttranslationpickerdemo-repository-data-application</artifactId>
       <version>${project.version}</version>
     </dependency>
 

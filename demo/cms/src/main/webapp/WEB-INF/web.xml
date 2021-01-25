@@ -6,8 +6,8 @@
          id="cms">
 
   <!-- General configuration -->
-  <display-name>documenttranslationpicker-demo CMS</display-name>
-  <description>documenttranslationpicker-demo CMS</description>
+  <display-name>Document Translation Picker Demo CMS</display-name>
+  <description>Document Translation Picker Demo CMS</description>
 
   <listener>
     <listener-class>org.hippoecm.hst.platform.container.HstCmsContextLoaderListener</listener-class>

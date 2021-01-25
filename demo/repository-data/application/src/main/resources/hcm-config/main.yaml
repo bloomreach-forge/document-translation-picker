@@ -2,4 +2,4 @@ definitions:
   namespace:
     documenttranslationpickerdemo:
       uri: http://www.documenttranslationpickerdemo.com/documenttranslationpickerdemo/nt/1.0
-      cnd: namespaces/documenttranslationpicker-demo.cnd
+      cnd: namespaces/documenttranslationpickerdemo.cnd

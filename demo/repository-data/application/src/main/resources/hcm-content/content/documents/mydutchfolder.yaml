@@ -1,7 +1,0 @@
-/content/documents/mydutchfolder:
-  jcr:primaryType: hippostd:folder
-  jcr:mixinTypes: ['hippotranslation:translated', 'mix:versionable']
-  jcr:uuid: 5d958b56-dacc-4c6b-b662-8ee13290390b
-  hippostd:foldertype: [new-translated-folder, new-document]
-  hippotranslation:id: 4babee3b-4ee7-4f29-a51f-478616e45cd5
-  hippotranslation:locale: nl

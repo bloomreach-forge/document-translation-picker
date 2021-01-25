@@ -4,13 +4,13 @@
 
   <parent>
     <groupId>org.onehippo.forge</groupId>
-    <artifactId>documenttranslationpicker-demo-repository-data</artifactId>
+    <artifactId>documenttranslationpickerdemo-repository-data</artifactId>
     <version>4.0.1-SNAPSHOT</version>
   </parent>
 
-  <name>documenttranslationpicker-demo Repository Data For Site</name>
-  <description>documenttranslationpicker-demo Repository Data For Site</description>
-  <artifactId>documenttranslationpicker-demo-repository-data-site</artifactId>
+  <name>Document Translation Picker Demo Repository Data For Site</name>
+  <description>Document Translation Picker Demo Repository Data For Site</description>
+  <artifactId>documenttranslationpickerdemo-repository-data-site</artifactId>
 
   <build>
     <defaultGoal>install</defaultGoal>

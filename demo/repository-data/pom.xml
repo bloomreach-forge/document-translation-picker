@@ -4,13 +4,13 @@
 
   <parent>
     <groupId>org.onehippo.forge</groupId>
-    <artifactId>documenttranslationpicker-demo</artifactId>
+    <artifactId>documenttranslationpickerdemo</artifactId>
     <version>4.0.1-SNAPSHOT</version>
   </parent>
 
-  <name>documenttranslationpicker-demo Repository Data</name>
-  <description>documenttranslationpicker-demo Repository Data</description>
-  <artifactId>documenttranslationpicker-demo-repository-data</artifactId>
+  <name>Document Translation Picker Demo Repository Data</name>
+  <description>Document Translation Picker Demo Repository Data</description>
+  <artifactId>documenttranslationpickerdemo-repository-data</artifactId>
   <packaging>pom</packaging>
 
   <modules>

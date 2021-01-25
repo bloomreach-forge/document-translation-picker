@@ -6,8 +6,8 @@
          id="site">
 
 
-  <display-name>documenttranslationpicker-demo site</display-name>
-  <description>documenttranslationpicker-demo site</description>
+  <display-name>Document Translation Picker Demo site</display-name>
+  <description>Document Translation Picker Demo site</description>
 
   <jsp-config>
     <jsp-property-group>
@@ -231,14 +231,9 @@
   </login-config>
 
   <security-role>
-    <description>Default role of BloomReach Repository</description>
+    <description>Default role of Bloomreach Repository</description>
     <role-name>everybody</role-name>
   </security-role>
-
-  <error-page>
-    <error-code>400</error-code>
-    <location>/WEB-INF/jsp/errorpages/ErrorPage400.jsp</location>
-  </error-page>
 
   <error-page>
     <error-code>401</error-code>

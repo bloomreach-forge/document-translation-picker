@@ -4,13 +4,13 @@
   <modelVersion>4.0.0</modelVersion>
   <parent>
     <groupId>org.onehippo.forge</groupId>
-    <artifactId>documenttranslationpicker-demo</artifactId>
+    <artifactId>documenttranslationpickerdemo</artifactId>
     <version>4.0.1-SNAPSHOT</version>
   </parent>
-  <artifactId>documenttranslationpicker-demo-site</artifactId>
+  <artifactId>documenttranslationpickerdemo-site</artifactId>
   <packaging>pom</packaging>
-  <name>documenttranslationpicker-demo Site</name>
-  <description>documenttranslationpicker-demo Site</description>
+  <name>Document Translation Picker Demo Site</name>
+  <description>Document Translation Picker Demo Site</description>
 
   <modules>
     <module>components</module>

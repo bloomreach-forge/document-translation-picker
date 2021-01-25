@@ -1,23 +1,5 @@
 package org.onehippo.forge.documenttranslationpicker.plugin;
 
-import java.io.Serializable;
-import java.rmi.RemoteException;
-import java.util.Collections;
-import java.util.Comparator;
-import java.util.Iterator;
-import java.util.LinkedList;
-import java.util.List;
-import java.util.Map;
-import java.util.Set;
-import java.util.UUID;
-import java.util.stream.Collectors;
-
-import javax.jcr.Node;
-import javax.jcr.NodeIterator;
-import javax.jcr.RepositoryException;
-
-
-import org.apache.commons.lang3.StringUtils;
 import org.apache.wicket.Component;
 import org.apache.wicket.MarkupContainer;
 import org.apache.wicket.markup.html.basic.Label;
@@ -63,12 +45,21 @@ import org.hippoecm.repository.util.JcrUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
 
+import javax.jcr.Node;
+import javax.jcr.NodeIterator;
+import javax.jcr.RepositoryException;
+import javax.jcr.Session;
+import java.io.Serializable;
+import java.rmi.RemoteException;
+import java.util.*;
+import java.util.stream.Collectors;
+
 public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
 
     private static final long serialVersionUID = 1L;
     private static Logger log = LoggerFactory.getLogger(LinkTranslationsWorkflowPlugin.class);
     private static final String CLUSTER_NAME = "cluster.name";
-    private static final String LINKPICKER_CLUSTER_NAME= "linkpicker.cluster.name";
+    private static final String LINKPICKER_CLUSTER_NAME = "linkpicker.cluster.name";
     private static final String DEFAULT_CLUSTER = "cms-pickers/documents-only";
 
 
@@ -148,35 +139,35 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
                         onPopulate();
 
                         add(
-                            new StdWorkflow<TranslationWorkflow>("unlink",
-                                new LoadableDetachableModel<String>() {
+                                new StdWorkflow<TranslationWorkflow>("unlink",
+                                        new LoadableDetachableModel<String>() {
+                                            @Override
+                                            protected String load() {
+                                                return new StringResourceModel("plugin.menuitem.unlink.title", LinkTranslationsWorkflowPlugin.this, null).getString();
+                                            }
+                                        }
+                                ) {
                                     @Override
-                                    protected String load() {
-                                        return new StringResourceModel("plugin.menuitem.unlink.title", LinkTranslationsWorkflowPlugin.this, null).getString();
+                                    protected void execute() throws Exception {
+                                        log.debug("remove plugin id from {}", getDocumentNode().getPath());
+                                        String uuid = UUID.randomUUID().toString();
+                                        setTranslationId(getDocumentNode().getParent(), uuid);
+                                        redraw();
                                     }
-                                }
-                            ) {
-                                @Override
-                                protected void execute() throws Exception {
-                                    log.debug("remove plugin id from {}", getDocumentNode().getPath());
-                                    String uuid = UUID.randomUUID().toString();
-                                    setTranslationId(getDocumentNode().getParent(), uuid);
-                                    redraw();
-                                }
 
-                                @Override
-                                public boolean isVisible() {
-                                    if (super.isVisible() && findPage() != null) {
-                                        return canTranslateModel.getObject();
+                                    @Override
+                                    public boolean isVisible() {
+                                        if (super.isVisible() && findPage() != null) {
+                                            return canTranslateModel.getObject();
+                                        }
+                                        return false;
                                     }
-                                    return false;
-                                }
 
-                                @Override
-                                protected Component getIcon(final String id) {
-                                    return HippoIcon.fromSprite(id, Icon.UNLINK);
-                                }
-                            });
+                                    @Override
+                                    protected Component getIcon(final String id) {
+                                        return HippoIcon.fromSprite(id, Icon.UNLINK);
+                                    }
+                                });
                     }
 
                     @Override
@@ -246,7 +237,7 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
     @Override
     public WorkflowDescriptor getModelObject() {
         if (getDefaultModel() instanceof WorkflowDescriptorModel) {
-            return ( (WorkflowDescriptorModel) getDefaultModel()).getObject();
+            return ((WorkflowDescriptorModel) getDefaultModel()).getObject();
         }
         return null;
     }
@@ -306,7 +297,7 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
             if (availableLocales == null) {
                 load();
             }
-            return availableLocales.subList((int) first, (int)(first + count)).iterator();
+            return availableLocales.subList((int) first, (int) (first + count)).iterator();
         }
 
         @Override
@@ -387,7 +378,7 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
             try {
                 return createLinkPickerDialog(getPluginContext());
             } catch (RepositoryException e) {
-                log.error("cannot create linkpicker dialog",e);
+                log.error("cannot create linkpicker dialog", e);
             }
             return null;
         }
@@ -396,6 +387,7 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
         protected void onDetach() {
             super.onDetach();
         }
+
         /**
          * Create a link picker dialog
          */
@@ -443,8 +435,8 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
                     return model;
                 }
 
-                private void updateTranslations(final String uuid)  {
-                    javax.jcr.Session session = UserSession.get().getJcrSession();
+                private void updateTranslations(final String uuid) {
+                    Session session = UserSession.get().getJcrSession();
                     try {
                         Node selectedDocumentNodeHandle = session.getNodeByIdentifier(uuid);
                         if (canUpdateTranslation(selectedDocumentNodeHandle)) {
@@ -453,13 +445,12 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
                             log.debug("link translations of {} with {}", selectedDocumentNodeHandle.getPath(), currentDocumentNodeVariant.getPath());
                             setTranslationId(selectedDocumentNodeHandle, translationId);
                         } else {
-                            log.warn("cannot link translations between {} and {}",selectedDocumentNodeHandle.getPath(), getDocumentNode().getPath());
+                            log.warn("cannot link translations between {} and {}", selectedDocumentNodeHandle.getPath(), getDocumentNode().getPath());
                         }
                     } catch (RepositoryException e) {
-                        log.error("Error linking plugin with "+uuid, e);
+                        log.error("Error linking plugin with {}", uuid, e);
                     }
                 }
-
 
 
                 private boolean canUpdateTranslation(final Node selectedDocumentHandle) throws RepositoryException {
@@ -467,9 +458,8 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
                     HippoTranslatedNode selectedDocumentTranslatedNode = new HippoTranslatedNode(selectedDocumentVariant);
 
                     return
-                            (   closestTranslatedFolder == null ||
-                                    StringUtils.startsWith(selectedDocumentVariant.getPath(), closestTranslatedFolder.getTranslation(language).getPath())
-                            )
+                            (closestTranslatedFolder == null
+                                    || selectedDocumentVariant.getPath().startsWith(closestTranslatedFolder.getTranslation(language).getPath()))
                                     && language.equals(selectedDocumentTranslatedNode.getLocale());
                 }
             };
@@ -489,7 +479,7 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
             if (translatedNode == null) {
                 return null;
             }
-            if (translatedNode.hasTranslation(language)){
+            if (translatedNode.hasTranslation(language)) {
                 return new HippoTranslatedNode(translatedNode.getTranslation(language));
             } else {
                 Node parentFolder = translatedNode.getContainingFolder();
@@ -509,15 +499,14 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
                 NodeIterator docNodes = handleNode.getNodes(handleNode.getName());
                 while (docNodes.hasNext()) {
                     Node docNode = docNodes.nextNode();
-                    log.debug("Setting translationID of " + docNode.getPath() + " to " + translationId);
+                    log.debug("Setting translationID of {} to {}", docNode.getPath(), translationId);
                     JcrUtils.ensureIsCheckedOut(docNode);
                     docNode.setProperty(HippoTranslationNodeType.ID, translationId);
                     docNode.getSession().save();
                     docNode.getSession().refresh(false);
                 }
             } catch (RepositoryException e) {
-                log.error("could not set property hippotranslation:id for document "
-                        + new JcrNodeModel(handleNode).getItemModel().getPath(), e);
+                log.error("could not set property hippotranslation:id for document {}", new JcrNodeModel(handleNode).getItemModel().getPath(), e);
             }
         }
     }
