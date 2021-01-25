@@ -87,7 +87,7 @@ Then build the brXM docker image:
     mvn -Pdocker.build
 
 This maven profile will create a docker image and add it to the local docker registry. The new image will be tagged
-as org.onehippo.forge/documenttranslationpickerdemo:4.0.1-SNAPSHOT
+as org.onehippo.forge/documenttranslationpickerdemo:5.0.0-SNAPSHOT
 
 To run the image with in-memory h2 database:
 
