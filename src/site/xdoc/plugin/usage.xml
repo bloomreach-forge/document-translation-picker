@@ -23,8 +23,11 @@
   </properties>
   <body>
     <section name="Using the Document translation picker">
-      <p>In the document perspective, an additional menu item "Link Translations" makes possible to browse on the corresponding translated folder to let the editor pick an existing document as the corresponding translation. </p>
+      <p>In the document perspective, an additional menu item "Link Translations" makes possible to browse on the
+        corresponding translated folder to let the editor pick an existing document as the corresponding translation. </p>
       <p>The menu item "Unlink" removes the link between translated documents</p>
-    </section>
+      <div class="screenshotpart">
+        <img src="../images/screenshot.png" alt="Screenshot of the Document Translation Picker menu"/>
+      </div>    </section>
   </body>
 </document>
