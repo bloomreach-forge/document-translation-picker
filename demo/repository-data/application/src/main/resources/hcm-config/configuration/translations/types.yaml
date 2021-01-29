@@ -46,3 +46,33 @@ definitions:
         documenttranslationpickerdemo:source: Source
         documenttranslationpickerdemo:title: Titre
         jcr:name: Message d'info
+    /hippo:configuration/hippo:translations/hippo:types/documenttranslationpickerdemo:contentdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:content: Content
+        documenttranslationpickerdemo:introduction: Introduction
+        documenttranslationpickerdemo:publicationdate: Publication date
+        documenttranslationpickerdemo:title: Title
+        jcr:name: Simple Document
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:content: Inhoud
+        documenttranslationpickerdemo:introduction: Introductie
+        documenttranslationpickerdemo:publicationdate: Publicatiedatum
+        documenttranslationpickerdemo:title: Titel
+        jcr:name: Eenvoudig Document
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:content: Contenu
+        documenttranslationpickerdemo:introduction: Introduction
+        documenttranslationpickerdemo:publicationdate: Date de publication
+        documenttranslationpickerdemo:title: Titre
+        jcr:name: Document simple
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:content: Inhalt
+        documenttranslationpickerdemo:introduction: Einführung
+        documenttranslationpickerdemo:publicationdate: Publikationsdatum
+        documenttranslationpickerdemo:title: Titel
+        jcr:name: Einfaches Dokument

@@ -3,7 +3,7 @@
   "-//Apache Software Foundation//DTD XDOC 1.0//EN"
   "http://maven.apache.org/dtd/xdoc_1_0.dtd">
 <!--
-    Copyright 2014-2019 Bloomreach
+    Copyright 2014-2021 Bloomreach
 
     Licensed under the Apache License, Version 2.0 (the  "License");
     you may not use this file except in compliance with the License.
@@ -23,84 +23,67 @@
   </properties>
   <body>
     <section name="Installing Document translation picker">
-      <subsection name="Add dependencies">
+      <subsection name="Add Maven dependencies">
         <p>
-          Make sure you have the forge Maven2 repository reference and dependency definition in the root pom.xml of your project.
+          Make sure you have the Forge Maven2 repository reference and dependency definition in the root pom.xml of your project.
         </p>
-        <div class="brush: xml">
           <source><![CDATA[
     <repositories>
-
-      <!-- SNIP -->
-
       <repository>
         <id>hippo-maven2-forge</id>
         <name>Hippo Maven 2 Forge Repository</name>
         <url>https://maven.onehippo.com/maven2-forge/</url>
       </repository>
-
-      <!-- SNIP -->
-
     </repositories>
 
-    <!-- SNIP -->
-
     <dependencyManagement>
-
-      <!-- SNIP -->
-
       <dependencies>
-
-        <!-- SNIP -->
-
-        <!-- NOTE: You should set a property named 'bloomreach.forge.documenttranslationpicker.version' to a version of this plugin! -->
+        <!-- NOTE: You should set a property named 'bloomreach.forge.documenttranslationpicker.version' to a version of this plugin -->
+        <!-- NOTE: before 5.0.0, the groupId was org.onehippo.forge -->
         <dependency>
-          <groupId>org.onehippo.forge</groupId>
+          <groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
           <artifactId>documenttranslationpicker-addon-repository</artifactId>
           <version>${bloomreach.forge.documenttranslationpicker.version}</version>
         </dependency>
 
         <dependency>
-          <groupId>org.onehippo.forge</groupId>
+          <groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
           <artifactId>documenttranslationpicker-addon-frontend</artifactId>
           <version>${bloomreach.forge.documenttranslationpicker.version}</version>
         </dependency>
 
-        <!-- SNIP -->
-
       </dependencies>
-
-      <!-- SNIP -->
-
     </dependencyManagement>
     ]]></source>
-        </div>
         <p>
-          And add the following dependency reference into your CMS module subproject.
+          Add the following dependency reference into your CMS dependencies module:
         </p>
-        <div class="brush: xml">
           <source><![CDATA[
     <dependencies>
 
-      <!-- SNIP -->
-
+      <!-- NOTE: before 5.0.0, the groupId was org.onehippo.forge -->
       <dependency>
-        <groupId>org.onehippo.forge</groupId>
+        <groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
         <artifactId>documenttranslationpicker-addon-repository</artifactId>
       </dependency>
       <dependency>
-        <groupId>org.onehippo.forge</groupId>
+        <groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
         <artifactId>documenttranslationpicker-addon-frontend</artifactId>
       </dependency>
 
-      <!-- SNIP -->
-
     </dependencies>
     ]]></source>
-    
-        </div>
+      </subsection>
+      <subsection name="Set bootstrap dependency">
+      <p>
+          The plugin contains a bootstrapping module with group "hippo-forge". Make sure your project bootstraps later
+          than that, by setting <code>after: [hippo-cms, hippo-forge]</code> in the hcm-module.yaml file of the
+          repository-data application module.
+        </p>
+      </subsection>
+      <subsection name="Rebuild and run">
         <p>
-          Now, you're ready to use the plugin!
+          Now, rebuild, run and you're ready to use the plugin!
         </p>
       </subsection>
     </section>

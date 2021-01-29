@@ -1,7 +1,7 @@
 group: 
-  name: documenttranslationpicker-demo
+  name: documenttranslationpickerdemo
   after: hippo-cms
-project: documenttranslationpicker-demo
+project: documenttranslationpickerdemo
 module: 
-  name: documenttranslationpicker-demo-repository-data-development
-  after: documenttranslationpicker-demo-repository-data-application
+  name: documenttranslationpickerdemo-repository-data-development
+  after: documenttranslationpickerdemo-repository-data-application

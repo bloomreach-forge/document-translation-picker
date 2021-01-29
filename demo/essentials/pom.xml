@@ -3,14 +3,14 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.onehippo.forge</groupId>
-    <artifactId>documenttranslationpicker-demo</artifactId>
-    <version>4.0.0</version>
+    <groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
+    <artifactId>documenttranslationpickerdemo</artifactId>
+    <version>5.0.0</version>
   </parent>
-  <artifactId>documenttranslationpicker-demo-essentials</artifactId>
+  <artifactId>documenttranslationpickerdemo-essentials</artifactId>
   <packaging>war</packaging>
-  <name>documenttranslationpicker-demo Essentials</name>
-  <description>documenttranslationpicker-demo Essentials</description>
+  <name>Document Translation Picker Demo Essentials</name>
+  <description>Document Translation Picker Demo Essentials</description>
   <dependencies>
     <dependency>
       <groupId>org.onehippo.cms7</groupId>

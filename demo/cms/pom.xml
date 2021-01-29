@@ -3,30 +3,18 @@
          xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance">
   <modelVersion>4.0.0</modelVersion>
   <parent>
-    <groupId>org.onehippo.forge</groupId>
-    <artifactId>documenttranslationpicker-demo</artifactId>
-    <version>4.0.0</version>
+    <groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
+    <artifactId>documenttranslationpickerdemo</artifactId>
+    <version>5.0.0</version>
   </parent>
-  <artifactId>documenttranslationpicker-demo-cms</artifactId>
+  <artifactId>documenttranslationpickerdemo-cms</artifactId>
   <packaging>war</packaging>
-  <name>documenttranslationpicker-demo CMS</name>
-  <description>documenttranslationpicker-demo CMS</description>
+  <name>Document Translation Picker Demo CMS</name>
+  <description>Document Translation Picker Demo CMS</description>
   <dependencies>
     <dependency>
-      <groupId>org.onehippo.forge</groupId>
-      <artifactId>documenttranslationpicker-addon-repository</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-
-    <dependency>
-      <groupId>org.onehippo.forge</groupId>
-      <artifactId>documenttranslationpicker-addon-frontend</artifactId>
-      <version>${project.version}</version>
-    </dependency>
-    
-    <dependency>
       <groupId>${project.groupId}</groupId>
-      <artifactId>documenttranslationpicker-demo-cms-dependencies</artifactId>
+      <artifactId>documenttranslationpickerdemo-cms-dependencies</artifactId>
       <version>${project.version}</version>
       <type>pom</type>
     </dependency>

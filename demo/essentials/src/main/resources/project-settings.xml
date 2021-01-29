@@ -10,10 +10,10 @@
     <hstRoot>/hst:documenttranslationpickerdemo</hstRoot>
     <projectNamespace>documenttranslationpickerdemo</projectNamespace>
     <repositoryDataModule>repository-data</repositoryDataModule>
-    <selectedBeansPackage>org.onehippo.forge.beans</selectedBeansPackage>
-    <selectedComponentsPackage>org.onehippo.forge.components</selectedComponentsPackage>
-    <selectedProjectPackage>org.onehippo.forge</selectedProjectPackage>
-    <selectedRestPackage>org.onehippo.forge.rest</selectedRestPackage>
+    <selectedBeansPackage>org.bloomreach.forge.documenttranslationpicker.beans</selectedBeansPackage>
+    <selectedComponentsPackage>org.bloomreach.forge.documenttranslationpicker.components</selectedComponentsPackage>
+    <selectedProjectPackage>org.bloomreach.forge.documenttranslationpicker</selectedProjectPackage>
+    <selectedRestPackage>org.bloomreach.forge.documenttranslationpicker.rest</selectedRestPackage>
     <setupDone>true</setupDone>
     <siteContextPath>/site</siteContextPath>
     <siteModule>site</siteModule>

@@ -1,23 +1,24 @@
 /content/documents/documenttranslationpickerdemo/news:
+  .meta:order-before: content
   jcr:primaryType: hippostd:folder
   jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
-  jcr:uuid: 3ac846a3-35b6-45da-826c-bc9f9d8e6eb5
+  jcr:uuid: ca1e02e6-6b22-4ce3-a11d-beabc765dfad
   hippostd:foldertype: [new-news-document, new-news-folder]
-  hippotranslation:id: cff1b813-23d3-491a-8a51-b5dea9e0adbc
+  hippotranslation:id: 6ec66a54-395d-4a9c-af2c-51c7893576ae
   hippotranslation:locale: en
-  /2019:
+  /2021:
     jcr:primaryType: hippostd:folder
     jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
-    jcr:uuid: e8367f54-d6fb-4c8e-b6f2-77ac354132c0
+    jcr:uuid: fd7a35bf-e8bb-47f2-a439-dea0a3b325b5
     hippostd:foldertype: [new-news-document, new-news-folder]
-    hippotranslation:id: 2f177e2c-e52c-44f7-8188-50ac0db9d677
+    hippotranslation:id: 7f5dd9ca-8745-427d-829a-5a1ffabde3fb
     hippotranslation:locale: en
-    /07:
+    /01:
       jcr:primaryType: hippostd:folder
       jcr:mixinTypes: ['hippotranslation:translated', 'mix:referenceable']
-      jcr:uuid: 639106aa-dad5-4f4e-a4d0-3d5a100cf73e
+      jcr:uuid: e4e8398a-f081-46c4-a650-c6b7fe359c11
       hippostd:foldertype: [new-news-document, new-news-folder]
-      hippotranslation:id: 3652eb41-ef9f-4068-b833-8bf9b8e83a6a
+      hippotranslation:id: e958253c-38e3-4866-9a47-7b24b58da8be
       hippotranslation:locale: en
       /the-medusa-news:
         jcr:primaryType: hippo:handle
@@ -27,9 +28,9 @@
         /the-medusa-news:
           jcr:primaryType: documenttranslationpickerdemo:newsdocument
           jcr:mixinTypes: ['mix:referenceable']
-          jcr:uuid: dd694b4a-96e7-43d9-aae2-3c7e041f7b81
+          jcr:uuid: a539938c-4b4e-4d0b-aa79-9dad8cd9a4b2
           documenttranslationpickerdemo:author: Alfred Anonymous
-          documenttranslationpickerdemo:date: 2019-07-25T11:56:00+02:00
+          documenttranslationpickerdemo:date: 2021-01-29T13:51:00+01:00
           documenttranslationpickerdemo:documenttype: news
           documenttranslationpickerdemo:introduction: Lorem ipsum dolor sit amet,
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -49,7 +50,7 @@
           hippostdpubwf:lastModificationDate: 2013-11-12T13:04:00+01:00
           hippostdpubwf:lastModifiedBy: admin
           hippostdpubwf:publicationDate: 2013-11-12T13:04:00+01:00
-          hippotranslation:id: bb16a576-2e1f-4339-8edc-daeb8efadc91
+          hippotranslation:id: 19c9470f-f76b-4896-a3b7-3f315336bbd8
           hippotranslation:locale: en
           /documenttranslationpickerdemo:content:
             jcr:primaryType: hippostd:html
@@ -94,9 +95,9 @@
         /2013-harvest:
           jcr:primaryType: documenttranslationpickerdemo:newsdocument
           jcr:mixinTypes: ['mix:referenceable']
-          jcr:uuid: 3cce103f-f71c-42fa-af7c-a36c88d386db
+          jcr:uuid: ec8873cb-2db2-4f4e-bab8-7916a7c4f2f8
           documenttranslationpickerdemo:author: Alfred Anonymous
-          documenttranslationpickerdemo:date: 2019-07-25T11:56:00+02:00
+          documenttranslationpickerdemo:date: 2021-01-29T13:51:00+01:00
           documenttranslationpickerdemo:documenttype: news
           documenttranslationpickerdemo:introduction: Lorem ipsum dolor sit amet,
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -116,7 +117,7 @@
           hippostdpubwf:lastModificationDate: 2013-11-12T14:31:00+01:00
           hippostdpubwf:lastModifiedBy: admin
           hippostdpubwf:publicationDate: 2013-11-12T14:31:00+01:00
-          hippotranslation:id: c742249e-dd62-4f90-992c-23c593165152
+          hippotranslation:id: 149abaf4-50e9-4864-ace7-8e0780c2b128
           hippotranslation:locale: en
           /documenttranslationpickerdemo:content:
             jcr:primaryType: hippostd:html
@@ -161,9 +162,9 @@
         /the-gastropoda-news:
           jcr:primaryType: documenttranslationpickerdemo:newsdocument
           jcr:mixinTypes: ['mix:referenceable']
-          jcr:uuid: ffa56bf6-b2bb-43a7-aed3-efc4dc8e838a
+          jcr:uuid: ff101d5d-38b3-4e3b-9b80-601f3c4e718e
           documenttranslationpickerdemo:author: Alfred Anonymous
-          documenttranslationpickerdemo:date: 2019-07-25T11:56:00+02:00
+          documenttranslationpickerdemo:date: 2021-01-29T13:51:00+01:00
           documenttranslationpickerdemo:documenttype: news
           documenttranslationpickerdemo:introduction: Lorem ipsum dolor sit amet,
             consectetur adipisicing elit, sed do eiusmod tempor incididunt ut labore
@@ -183,7 +184,7 @@
           hippostdpubwf:lastModificationDate: 2013-11-12T12:52:00+01:00
           hippostdpubwf:lastModifiedBy: admin
           hippostdpubwf:publicationDate: 2013-11-12T12:52:00+01:00
-          hippotranslation:id: ef18b7f7-2f93-4313-8ac1-a4413ea6a1ee
+          hippotranslation:id: b7a59b4d-4520-46fd-8b4c-323fe78eb785
           hippotranslation:locale: en
           /documenttranslationpickerdemo:content:
             jcr:primaryType: hippostd:html

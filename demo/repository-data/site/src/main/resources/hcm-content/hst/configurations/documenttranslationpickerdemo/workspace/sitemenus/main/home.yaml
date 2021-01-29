@@ -1,3 +1,4 @@
 /hst:hst/hst:configurations/documenttranslationpickerdemo/hst:workspace/hst:sitemenus/main/home:
+  .meta:order-before: content
   jcr:primaryType: hst:sitemenuitem
   hst:referencesitemapitem: root

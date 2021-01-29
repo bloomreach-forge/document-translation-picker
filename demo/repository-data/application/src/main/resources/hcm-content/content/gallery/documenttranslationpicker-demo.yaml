@@ -1,7 +1,0 @@
-/content/gallery/documenttranslationpickerdemo:
-  jcr:primaryType: hippogallery:stdImageGallery
-  jcr:mixinTypes: ['hippo:named', 'mix:referenceable']
-  jcr:uuid: cc817b31-1315-47d9-ba52-351b322f5478
-  hippo:name: documenttranslationpicker-demo
-  hippostd:foldertype: [new-image-folder]
-  hippostd:gallerytype: ['hippogallery:imageset']
