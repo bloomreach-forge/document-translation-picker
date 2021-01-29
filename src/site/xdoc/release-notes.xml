@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-    Copyright 2015-2021 Bloomreach BV
+    Copyright 2015-2021 Bloomreach
 
     Licensed to the Apache Software Foundation (ASF) under one or more
     contributor license agreements.  See the NOTICE file distributed with
@@ -27,7 +27,7 @@
       <table>
         <tr>
           <th>Plugin version</th>
-          <th>Hippo CMS Release version</th>
+          <th>Bloomreach XM Release version</th>
         </tr>
         <tr>
           <td>5.x</td>
@@ -53,9 +53,11 @@
     </section>
     <section name="Release Notes">
       <subsection name="5.0.0">
-        <p class="smallinfo">Release Date: 25 January 2021</p>
+        <p class="smallinfo">Release Date: 29 January 2021</p>
         <ul>
-          <li>Upgrade to Experience Manager 14.</li>
+          <li>Upgrade to Experience Manager 14.<br/>
+            Note: the groupId of the artifacts has changed from <code>org.onehippo.forge</code> to
+            <code>org.bloomreach.forge.documenttranslationpicker</code></li>
         </ul>
       </subsection>
       <subsection name="4.0.0">
