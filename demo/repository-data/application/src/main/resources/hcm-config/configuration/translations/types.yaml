@@ -1,0 +1,78 @@
+definitions:
+  config:
+    /hippo:configuration/hippo:translations/hippo:types/documenttranslationpickerdemo:newsdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:author: Author
+        documenttranslationpickerdemo:content: Content
+        documenttranslationpickerdemo:date: Date
+        documenttranslationpickerdemo:image: Image
+        documenttranslationpickerdemo:introduction: Introduction
+        documenttranslationpickerdemo:location: Location
+        documenttranslationpickerdemo:source: Source
+        documenttranslationpickerdemo:title: Title
+        jcr:name: News Item
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:author: Auteur
+        documenttranslationpickerdemo:content: Inhoud
+        documenttranslationpickerdemo:date: Datum
+        documenttranslationpickerdemo:image: Afbeelding
+        documenttranslationpickerdemo:introduction: Introductie
+        documenttranslationpickerdemo:location: Locatie
+        documenttranslationpickerdemo:source: Bron
+        documenttranslationpickerdemo:title: Titel
+        jcr:name: Nieuwsbericht
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:author: Verfasser
+        documenttranslationpickerdemo:content: Inhalt
+        documenttranslationpickerdemo:date: Datum
+        documenttranslationpickerdemo:image: Abbildung
+        documenttranslationpickerdemo:introduction: Einführung
+        documenttranslationpickerdemo:location: Standort
+        documenttranslationpickerdemo:source: Quelle
+        documenttranslationpickerdemo:title: Titel
+        jcr:name: News
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:author: Auteur
+        documenttranslationpickerdemo:content: Contenu
+        documenttranslationpickerdemo:date: Date
+        documenttranslationpickerdemo:image: Image
+        documenttranslationpickerdemo:introduction: Introduction
+        documenttranslationpickerdemo:location: Lieu
+        documenttranslationpickerdemo:source: Source
+        documenttranslationpickerdemo:title: Titre
+        jcr:name: Message d'info
+    /hippo:configuration/hippo:translations/hippo:types/documenttranslationpickerdemo:contentdocument:
+      jcr:primaryType: hipposys:resourcebundles
+      /en:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:content: Content
+        documenttranslationpickerdemo:introduction: Introduction
+        documenttranslationpickerdemo:publicationdate: Publication date
+        documenttranslationpickerdemo:title: Title
+        jcr:name: Simple Document
+      /nl:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:content: Inhoud
+        documenttranslationpickerdemo:introduction: Introductie
+        documenttranslationpickerdemo:publicationdate: Publicatiedatum
+        documenttranslationpickerdemo:title: Titel
+        jcr:name: Eenvoudig Document
+      /fr:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:content: Contenu
+        documenttranslationpickerdemo:introduction: Introduction
+        documenttranslationpickerdemo:publicationdate: Date de publication
+        documenttranslationpickerdemo:title: Titre
+        jcr:name: Document simple
+      /de:
+        jcr:primaryType: hipposys:resourcebundle
+        documenttranslationpickerdemo:content: Inhalt
+        documenttranslationpickerdemo:introduction: Einführung
+        documenttranslationpickerdemo:publicationdate: Publikationsdatum
+        documenttranslationpickerdemo:title: Titel
+        jcr:name: Einfaches Dokument
