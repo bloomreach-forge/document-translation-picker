@@ -1,5 +1,0 @@
-definitions:
-  namespace:
-    documenttranslationpickerdemo:
-      uri: http://www.documenttranslationpickerdemo.com/documenttranslationpickerdemo/nt/1.0
-      cnd: namespaces/documenttranslationpickerdemo.cnd

@@ -1,6 +1,0 @@
-site: documenttranslationpickerdemo
-group: documenttranslationpickerdemo
-project: documenttranslationpickerdemo
-module:
-  name: documenttranslationpickerdemo-repository-data-site-development
-  after: documenttranslationpickerdemo-repository-data-site
