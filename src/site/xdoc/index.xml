@@ -29,9 +29,10 @@
       </p>
       <subsection name="Usage">
         <p>
-          This plugin adds a menu item to the 'document' item in the toolbar. A CMS user can use it to open a dialog
-          and select existing documents in translated folders. These documents will get the same, newly created,
-          translationID as the current document.
+          This plugin adds a menu 'Link Translations' to the menubar. A CMS user can use its subitems to open a
+          dialog and select existing documents in translated folders. These documents will get the same, newly created,
+          translationID as the current document. Also the user can choose to unlink to current document from any
+          existing document.
         </p>
         <div class="screenshotpart">
           <img src="images/screenshot.png" alt="Screenshot of the Document Translation Picker menu"/>
