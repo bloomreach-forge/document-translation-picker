@@ -1,5 +1,21 @@
 package org.onehippo.forge.documenttranslationpicker.plugin;
 
+import java.io.Serializable;
+import java.rmi.RemoteException;
+import java.util.Collections;
+import java.util.Comparator;
+import java.util.Iterator;
+import java.util.LinkedList;
+import java.util.List;
+import java.util.Map;
+import java.util.Set;
+import java.util.UUID;
+import java.util.stream.Collectors;
+import javax.jcr.Node;
+import javax.jcr.NodeIterator;
+import javax.jcr.RepositoryException;
+import javax.jcr.Session;
+
 import org.apache.wicket.Component;
 import org.apache.wicket.MarkupContainer;
 import org.apache.wicket.markup.html.basic.Label;
@@ -10,6 +26,7 @@ import org.apache.wicket.markup.repeater.data.DataView;
 import org.apache.wicket.markup.repeater.data.IDataProvider;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.LoadableDetachableModel;
+import org.apache.wicket.model.Model;
 import org.apache.wicket.model.StringResourceModel;
 import org.apache.wicket.request.resource.ResourceReference;
 import org.hippoecm.addon.workflow.MenuDescription;
@@ -19,6 +36,7 @@ import org.hippoecm.frontend.dialog.AbstractDialog;
 import org.hippoecm.frontend.dialog.IDialogService.Dialog;
 import org.hippoecm.frontend.editor.plugins.linkpicker.LinkPickerDialog;
 import org.hippoecm.frontend.model.JcrNodeModel;
+import org.hippoecm.frontend.model.ModelReference;
 import org.hippoecm.frontend.plugin.IPluginContext;
 import org.hippoecm.frontend.plugin.config.IPluginConfig;
 import org.hippoecm.frontend.plugin.config.impl.JavaPluginConfig;
@@ -43,15 +61,6 @@ import org.hippoecm.repository.translation.TranslationWorkflow;
 import org.hippoecm.repository.util.JcrUtils;
 import org.slf4j.Logger;
 import org.slf4j.LoggerFactory;
-
-import javax.jcr.Node;
-import javax.jcr.NodeIterator;
-import javax.jcr.RepositoryException;
-import javax.jcr.Session;
-import java.io.Serializable;
-import java.rmi.RemoteException;
-import java.util.*;
-import java.util.stream.Collectors;
 
 public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
 
@@ -102,19 +111,28 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
         };
 
         try {
-            Node parentFolder = documentNode.getParent().getParent();
-            if (!parentFolder.isNodeType(HippoTranslationNodeType.NT_TRANSLATED) &&
-                    (!documentNode.isNodeType(HippoTranslationNodeType.NT_TRANSLATED) || !localeProvider.getLocales().contains(languageModel.getObject()))) {
+            final Node handleNode = documentNode.getParent();
+            final Node parentFolder = handleNode.getParent();
+            final String identifier = handleNode.getIdentifier();
+            final String referenceModelIdentifier = LinkTranslationsWorkflowPlugin.class.getName() + "." + identifier  + "."
+                    + UserSession.get().getId();
+            final ModelReference service = context.getService(referenceModelIdentifier, ModelReference.class);
+            if (service != null || (!parentFolder.isNodeType(HippoTranslationNodeType.NT_TRANSLATED) &&
+                    (!documentNode.isNodeType(HippoTranslationNodeType.NT_TRANSLATED) || !localeProvider.getLocales().contains(languageModel.getObject())))) {
                 return;
             }
+            final ModelReference<Boolean> translationsModelReference = new ModelReference<>(referenceModelIdentifier, new Model<>(Boolean.TRUE));
+            translationsModelReference.init(context);
         } catch (RepositoryException e) {
             log.warn("Could not determine translations status of document", e);
         }
 
         add(new EmptyPanel("content"));
+        add(getMenuDescription(languageModel, localeProvider));
+    }
 
-
-        add(new MenuDescription() {
+    private MenuDescription getMenuDescription(final IModel<String> languageModel, final ILocaleProvider localeProvider) {
+        return new MenuDescription() {
             private static final long serialVersionUID = 1L;
 
             @Override
@@ -201,8 +219,7 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
 
                 return fragment;
             }
-        });
-
+        };
     }
 
     public boolean hasLocale(String locale) {
