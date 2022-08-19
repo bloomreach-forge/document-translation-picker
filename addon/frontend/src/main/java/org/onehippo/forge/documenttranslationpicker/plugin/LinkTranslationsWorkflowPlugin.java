@@ -8,7 +8,6 @@ import org.apache.wicket.markup.html.panel.Fragment;
 import org.apache.wicket.markup.repeater.Item;
 import org.apache.wicket.markup.repeater.data.DataView;
 import org.apache.wicket.markup.repeater.data.IDataProvider;
-import org.apache.wicket.model.IChainingModel;
 import org.apache.wicket.model.IModel;
 import org.apache.wicket.model.LoadableDetachableModel;
 import org.apache.wicket.model.StringResourceModel;
@@ -403,10 +402,9 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
                 dialogConfig.put(NodePickerControllerSettings.BASE_UUID, closestTranslatedFolder.getTranslation(language).getIdentifier());
             }
 
-            final IChainingModel<String> linkPickerModel = new IChainingModel<String>() {
+            final IModel<String> linkPickerModel = new IModel<String>() {
 
                 private String object;
-                private IModel<?> model;
 
                 @Override
                 public void detach() {
@@ -423,16 +421,6 @@ public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
                     this.object = object;
                     updateTranslations(object);
                     redraw();
-                }
-
-                @Override
-                public void setChainedModel(final IModel<?> model) {
-                    this.model = model;
-                }
-
-                @Override
-                public IModel<?> getChainedModel() {
-                    return model;
                 }
 
                 private void updateTranslations(final String uuid) {
