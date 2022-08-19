@@ -65,7 +65,7 @@ import org.slf4j.LoggerFactory;
 public final class LinkTranslationsWorkflowPlugin extends RenderPlugin {
 
     private static final long serialVersionUID = 1L;
-    private static Logger log = LoggerFactory.getLogger(LinkTranslationsWorkflowPlugin.class);
+    private static final Logger log = LoggerFactory.getLogger(LinkTranslationsWorkflowPlugin.class);
     private static final String CLUSTER_NAME = "cluster.name";
     private static final String LINKPICKER_CLUSTER_NAME = "linkpicker.cluster.name";
     private static final String DEFAULT_CLUSTER = "cms-pickers/documents-only";

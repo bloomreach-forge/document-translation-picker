@@ -10,7 +10,7 @@
 	<groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
 	<artifactId>documenttranslationpicker</artifactId>
   <name>Document Translation Picker Plugin</name>
-	<version>5.0.1-SNAPSHOT</version>
+	<version>6.0.0-SNAPSHOT</version>
 	<description>The documenttranslationpicker project provides a plugin to Hippo CMS. Enables editors to pick a translation for a document.</description>
 	<packaging>pom</packaging>
 
@@ -51,9 +51,9 @@
 	</licenses>
 
 	<properties>
-		<plugin.site.version>3.7.1</plugin.site.version>
-		<plugin.surefire.version>2.16</plugin.surefire.version>
-    <plugin.jxr.version>2.2</plugin.jxr.version>
+		<plugin.site.version>3.9.1</plugin.site.version>
+		<plugin.surefire.version>3.0.0-M5</plugin.surefire.version>
+    	<plugin.jxr.version>2.2</plugin.jxr.version>
 	</properties>
 
 	<repositories>
@@ -94,14 +94,6 @@
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
 				<version>${plugin.site.version}</version>
-			</plugin>
-			<plugin>
-				<groupId>org.apache.maven.plugins</groupId>
-				<artifactId>maven-compiler-plugin</artifactId>
-				<configuration>
-					<source>1.8</source>
-					<target>1.8</target>
-				</configuration>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -180,7 +172,7 @@
 				<version>${maven.plugin.javadoc.version}</version>
 				<configuration>
 					<aggregate>true</aggregate>
-					<source>1.8</source>
+					<source>11</source>
 					<links>
 						<link>http://download.oracle.com/javase/8/docs/api</link>
 					</links>
