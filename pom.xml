@@ -10,7 +10,7 @@
 	<groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
 	<artifactId>documenttranslationpicker</artifactId>
   <name>Document Translation Picker Plugin</name>
-	<version>6.0.0</version>
+	<version>6.0.1-SNAPSHOT</version>
 	<description>The documenttranslationpicker project provides a plugin to Hippo CMS. Enables editors to pick a translation for a document.</description>
 	<packaging>pom</packaging>
 
