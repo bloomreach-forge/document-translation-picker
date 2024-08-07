@@ -1,0 +1,1 @@
+typeSearchIndex = [{"l":"All Classes","url":"allclasses-index.html"},{"p":"org.onehippo.forge.documenttranslationpicker.plugin","l":"LinkTranslationsWorkflowPlugin"}]
