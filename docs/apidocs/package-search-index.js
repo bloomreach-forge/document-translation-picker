@@ -1,1 +1,1 @@
-packageSearchIndex = [{"l":"All Packages","url":"allpackages-index.html"},{"l":"org.onehippo.forge.documenttranslationpicker.plugin"}]
+packageSearchIndex = [{"l":"All Packages","u":"allpackages-index.html"},{"l":"org.onehippo.forge.documenttranslationpicker.plugin"}];updateSearchResults();
