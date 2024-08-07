@@ -16,11 +16,13 @@
     <dependency>
       <groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
       <artifactId>documenttranslationpicker-addon-repository</artifactId>
+      <version>${project.version}</version>
     </dependency>
 
     <dependency>
       <groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
       <artifactId>documenttranslationpicker-addon-frontend</artifactId>
+      <version>${project.version}</version>
     </dependency>
 
     <dependency>

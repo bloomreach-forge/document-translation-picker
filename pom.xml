@@ -1,10 +1,25 @@
 <?xml version="1.0" encoding="UTF-8"?>
+<!--
+    Copyright 2024 Bloomreach
+
+    Licensed under the Apache License, Version 2.0 (the  "License");
+    you may not use this file except in compliance with the License.
+    You may obtain a copy of the License at
+
+    http://www.apache.org/licenses/LICENSE-2.0
+
+    Unless required by applicable law or agreed to in writing, software
+    distributed under the License is distributed on an "AS IS"
+    BASIS, WITHOUT WARRANTIES OR CONDITIONS OF ANY KIND, either express or implied.
+    See the License for the specific language governing permissions and
+    limitations under the License.
+-->
 <project xmlns="http://maven.apache.org/POM/4.0.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 http://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 	<parent>
 		<groupId>org.onehippo.cms7</groupId>
 		<artifactId>hippo-cms7-release</artifactId>
-		<version>15.1.0</version>
+		<version>16.0.0</version>
 	</parent>
 
 	<groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
@@ -31,9 +46,9 @@
 
 	<distributionManagement>
 		<repository>
-			<name>Hippo Maven 2 Forge Repository</name>
-			<id>hippo-maven2-forge</id>
-			<url>https://maven.onehippo.com/content/repositories/forge-releases/</url>
+			<name>Bloomreach Maven 2 Forge Repository</name>
+			<id>bloomreach-maven2-forge</id>
+			<url>https://maven.bloomreach.com/content/repositories/forge-releases/</url>
 			<uniqueVersion>false</uniqueVersion>
 		</repository>
 	</distributionManagement>
@@ -51,16 +66,14 @@
 	</licenses>
 
 	<properties>
-		<plugin.site.version>3.9.1</plugin.site.version>
-		<plugin.surefire.version>3.0.0-M5</plugin.surefire.version>
-    	<plugin.jxr.version>2.2</plugin.jxr.version>
+    	<plugin.jxr.version>3.4.0</plugin.jxr.version>
 	</properties>
 
 	<repositories>
 		<repository>
 			<id>hippo</id>
 			<name>Hippo Maven 2 repository</name>
-			<url>https://maven.onehippo.com/maven2/</url>
+			<url>https://maven.bloomreach.com/maven2/</url>
 			<snapshots/>
 			<releases>
 				<updatePolicy>never</updatePolicy>
@@ -68,9 +81,9 @@
 			<layout>default</layout>
 		</repository>
 		<repository>
-			<id>hippo-maven2-forge</id>
+			<id>bloomreach-maven2-forge</id>
 			<name>Hippo Maven 2 Forge repository</name>
-			<url>https://maven.onehippo.com/maven2-forge/</url>
+			<url>https://maven.bloomreach.com/maven2-forge/</url>
 			<snapshots/>
 		</repository>
 	</repositories>
@@ -82,18 +95,10 @@
 	<build>
 		<finalName>${project.parent.artifactId}-${project.artifactId}-${project.version}</finalName>
 		<defaultGoal>package</defaultGoal>
-		<extensions>
-			<extension>
-				<groupId>org.jvnet.wagon-svn</groupId>
-				<artifactId>wagon-svn</artifactId>
-				<version>1.9</version>
-			</extension>
-		</extensions>
 		<plugins>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-site-plugin</artifactId>
-				<version>${plugin.site.version}</version>
 			</plugin>
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
@@ -126,7 +131,6 @@
 				<plugin>
 					<groupId>org.apache.maven.plugins</groupId>
 					<artifactId>maven-surefire-plugin</artifactId>
-					<version>${plugin.surefire.version}</version>
 				</plugin>
 			</plugins>
 		</pluginManagement>
@@ -153,7 +157,6 @@
 					<plugin>
 						<groupId>org.apache.maven.plugins</groupId>
 						<artifactId>maven-site-plugin</artifactId>
-						<version>${plugin.site.version}</version>
 						<configuration>
 							<outputDirectory>docs</outputDirectory>
 						</configuration>
@@ -169,7 +172,6 @@
 			<plugin>
 				<groupId>org.apache.maven.plugins</groupId>
 				<artifactId>maven-javadoc-plugin</artifactId>
-				<version>${maven.plugin.javadoc.version}</version>
 				<configuration>
 					<aggregate>true</aggregate>
 					<source>11</source>
