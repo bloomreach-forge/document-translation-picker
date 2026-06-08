@@ -19,13 +19,13 @@
 	<parent>
 		<groupId>org.onehippo.cms7</groupId>
 		<artifactId>hippo-cms7-release</artifactId>
-		<version>16.0.0</version>
+		<version>17.0.0</version>
 	</parent>
 
 	<groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
 	<artifactId>documenttranslationpicker</artifactId>
   <name>Document Translation Picker Plugin</name>
-	<version>7.0.1-SNAPSHOT</version>
+	<version>8.0.0-SNAPSHOT</version>
 	<description>The documenttranslationpicker project provides a plugin to Hippo CMS. Enables editors to pick a translation for a document.</description>
 	<packaging>pom</packaging>
 
@@ -55,7 +55,7 @@
 
 	<issueManagement>
 		<system>Hippo JIRA</system>
-		<url>https://issues.onehippo.com/browse/HIPFORGE</url>
+		<url>https://bloomreach.atlassian.net/browse/FORGE</url>
 	</issueManagement>
 
 	<licenses>
@@ -174,7 +174,7 @@
 				<artifactId>maven-javadoc-plugin</artifactId>
 				<configuration>
 					<aggregate>true</aggregate>
-					<source>11</source>
+					<source>21</source>
 					<links>
 						<link>http://download.oracle.com/javase/8/docs/api</link>
 					</links>
