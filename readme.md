@@ -1,5 +1,3 @@
-[![Build Status](https://travis-ci.org/bloomreach-forge/document-translation-picker.svg?branch=develop)](https://travis-ci.org/bloomreach-forge/document-translation-picker)
-
 # Document Translation Picker Plugin for Hippo CMS
 Purpose of this plugin is to link existing documents as translations of each other.
 

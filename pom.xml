@@ -1,6 +1,6 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <!--
-    Copyright 2024 Bloomreach
+    Copyright 2026 Bloomreach
 
     Licensed under the Apache License, Version 2.0 (the  "License");
     you may not use this file except in compliance with the License.
@@ -19,7 +19,7 @@
 	<parent>
 		<groupId>org.onehippo.cms7</groupId>
 		<artifactId>hippo-cms7-release</artifactId>
-		<version>17.0.0</version>
+		<version>17.1.1</version>
 	</parent>
 
 	<groupId>org.bloomreach.forge.documenttranslationpicker</groupId>
@@ -66,13 +66,13 @@
 	</licenses>
 
 	<properties>
-    	<plugin.jxr.version>3.4.0</plugin.jxr.version>
+    	<plugin.jxr.version>3.6.0</plugin.jxr.version>
 	</properties>
 
 	<repositories>
 		<repository>
-			<id>hippo</id>
-			<name>Hippo Maven 2 repository</name>
+			<id>bloomreach</id>
+			<name>Bloomreach Maven 2 repository</name>
 			<url>https://maven.bloomreach.com/maven2/</url>
 			<snapshots/>
 			<releases>
@@ -82,7 +82,7 @@
 		</repository>
 		<repository>
 			<id>bloomreach-maven2-forge</id>
-			<name>Hippo Maven 2 Forge repository</name>
+			<name>Bloomreach Maven 2 Forge repository</name>
 			<url>https://maven.bloomreach.com/maven2-forge/</url>
 			<snapshots/>
 		</repository>
