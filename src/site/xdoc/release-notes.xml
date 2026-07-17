@@ -1,6 +1,6 @@
 <?xml version="1.0"?>
 <!--
-    Copyright 2015-2021 Bloomreach
+    Copyright 2026 Bloomreach
 
     Licensed to the Apache Software Foundation (ASF) under one or more
     contributor license agreements.  See the NOTICE file distributed with
@@ -28,6 +28,10 @@
                 <tr>
                     <th>Plugin version</th>
                     <th>Bloomreach XM Release version</th>
+                </tr>
+                <tr>
+                    <td>8.x</td>
+                    <td>17.x</td>
                 </tr>
                 <tr>
                     <td>7.x</td>
@@ -60,6 +64,13 @@
             </table>
         </section>
         <section name="Release Notes">
+            <subsection name="8.0.0">
+                <p class="smallinfo">Release Date: 17 July 2026</p>
+                <ul>
+                    <li><a href="https://issues.onehippo.com/browse/FORGE-592">FORGE-592</a> -
+                        Upgrade to Experience Manager 17</li>
+                </ul>
+            </subsection>
             <subsection name="7.0.0">
                 <p class="smallinfo">Release Date: 07 August 2024</p>
                 <ul>
